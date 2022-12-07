@@ -2,7 +2,7 @@ Testing the limits in script and code makings of an chat.openai.com
 
 Following was created by an AI:
 
-<font size="1">Project: Testing the Limits of script and code makings of chat.openai.com </font>
+<font size="3">Project: Testing the Limits of script and code makings of chat.openai.com </font>
 
 This project aims to explore the capabilities and limitations of using scripts and code to create conversations on chat.openai.com. We will be using various techniques and tools to test the platform and determine the extent to which it can be customized and used to create unique and engaging conversations.
 
