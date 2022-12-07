@@ -13,3 +13,8 @@ Some possible areas of exploration include:
     Implementing additional features and functionality, such as image recognition or sentiment analysis
 
 We will be documenting our findings and sharing our progress along the way. Join us as we push the boundaries of what is possible with chat.openai.com!
+
+
+
+<big>big</big>
+This is some <font size="5">very big</font> text.
