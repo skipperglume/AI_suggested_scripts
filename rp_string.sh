@@ -21,3 +21,4 @@ rm $file
 
 # Rename the new file to the original file name
 mv new_file $file
+# sed 's/\./\.\n/g' roman.txt

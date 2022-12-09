@@ -1,3 +1,7 @@
+I'll present you a long text. It is a synopsis of a tabletop role-playing game of two players. Player one enters his current decisions and the Player two describes what those actions bring Player one to. And such process repeats. Read it and ignore all symbols in it except letters, comma (,) and a dot (.).  After, write a detailed and extensive roman that is based on action Player one have taken and which consequences happened. Do not produce no other output. You can add additional information to benefit. The text starts here: 
+
+
+
 As the ghost approaches, you quickly reach into your inventory and pull out a magical potion.
  You throw the potion at the ghost, hoping that it will be enough to banish the spirit back to the afterlife.
  The potion explodes on impact, engulfing the ghost in a bright light.
