@@ -1,0 +1,22 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/lofu/.arduino15/packages/esp32/hardware/esp32/2.0.5/cores/esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/lofu/.arduino15/packages/esp32/hardware/esp32/2.0.5/variants/esp32da"
+  },
+  {
+    "Sourcefile": "/home/lofu/Documents/working_dir/shell_scripts/build/sketch/sketch.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/lofu/Documents/working_dir/shell_scripts/build/sketch/template.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

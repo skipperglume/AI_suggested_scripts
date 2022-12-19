@@ -27,7 +27,7 @@ class ToDoList:
     def view_list(self):
         print("Here are the tasks in your To Do List:")
         for item in self.to_do_list:
-            print(f"  {item}")
+            print(f"  *{item}*")
         print(f"  Total tasks : {len(self.to_do_list)}")
 
 class TimeStampedToDoList(ToDoList):
