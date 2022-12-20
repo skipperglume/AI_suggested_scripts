@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Currency Calculator</title>
+	<meta name="description" content="Free currency calculator to convert between most of the global currencies using live or custom exchange rates. Also, check the latest exchange rate." />
+	<link rel="stylesheet" href="/style.css" /><script src="//d26tpo4cm8sb6k.cloudfront.net/js/common.js" async></script>	<link rel="apple-touch-icon" sizes="180x180" href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="//d26tpo4cm8sb6k.cloudfront.net/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="//d26tpo4cm8sb6k.cloudfront.net/icon-16x16.png">
+	<link rel="manifest" href="/manifest.json"></head>
+<body>
+<div id="headerout">
+	<div id="header">
+		<div id="logo"><a href="/"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculator-white.svg" width="208" height="22"></a></div>
+			</div>
+</div>
+<div id="clear"></div><div id="contentout"><div id="content"><div id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">home</span></a><meta itemprop="position" content="1" /></span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/financial-calculator.html" itemprop="item"><span itemprop="name">financial</span></a><meta itemprop="position" content="2" /></span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/currency-calculator.html" itemprop="item"><span itemprop="name">currency calculator</span></a><meta itemprop="position" content="3" /></span></div>		<h1>Currency Calculator</h1>
+<div id="insmdc"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/insm.svg"></div><h2>With Live Exchange Rate</h2>
+<div class="panel">
+<table border="0" cellspacing="0" cellpadding="3" id="standard">
+<form action="/currency-calculator.html">
+	<tr>
+		<td align="right"><b>Amount</b></td>
+		<td><input type="text" name="eamount" id="eamount" value="100" class="inlongest"></td>
+	</tr>
+	<tr>
+		<td align="right"><b>From</b></td>
+		<td><select name="efrom" id="efrom" ></select></td>
+	</tr>
+	<tr>
+		<td align="right"><b>To</b></td>
+		<td><select name="eto" id="eto" ></select></td>
+	</tr>
+	<tr>
+		<td align="right">&nbsp;</td>
+		<td><div id="ccmajorccsetting"><label for="ccmajorccsettingbox" class="cbcontainer"><input id="ccmajorccsettingbox" type="checkbox" name="ccmajorccsettingbox" value="1" onClick="ccPopulateDropdown();" checked><span class="cbmark"></span>Show most popular currencies only</label></div></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td><td><input type="hidden" name="type" value="1"><input type="image" src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg" value="Calculate" alt="Calculate"></td>
+	</tr>
+</form>
+</table>
+</div>
+<script>
+var majorCurrencies = ":USD:ZAR:AUD:CAD:CHF:GBP:JPY:EUR:CNY:INR:BRL:RUB:HKD:MXN:KRW:SGD:BTC:";
+var currentFrom = 'USD';
+var currentTo = 'EUR';
+var listsArray = [['AED','United Arab Emirates Dirham'],['AFN','Afghan Afghani'],['ALL','Albanian Lek'],['AMD','Armenian Dram'],['ANG','Netherlands Antillean Guilder'],['AOA','Angolan Kwanza'],['ARS','Argentine Peso'],['AUD','Australian Dollar'],['AWG','Aruban Florin'],['AZN','Azerbaijani Manat'],['BAM','Bosnia-Herzegovina Convertible Mark'],['BBD','Barbadian Dollar'],['BDT','Bangladeshi Taka'],['BGN','Bulgarian Lev'],['BHD','Bahraini Dinar'],['BIF','Burundian Franc'],['BMD','Bermudan Dollar'],['BND','Brunei Dollar'],['BOB','Bolivian Boliviano'],['BRL','Brazilian Real'],['BSD','Bahamian Dollar'],['BTC','Bitcoin'],['BTN','Bhutanese Ngultrum'],['BWP','Botswanan Pula'],['BYN','Belarusian Ruble'],['BZD','Belize Dollar'],['CAD','Canadian Dollar'],['CDF','Congolese Franc'],['CHF','Swiss Franc'],['CLF','Chilean Unit of Account (UF)'],['CLP','Chilean Peso'],['CNH','Chinese Yuan (Offshore)'],['CNY','Chinese Yuan'],['COP','Colombian Peso'],['CRC','Costa Rican Colón'],['CUC','Cuban Convertible Peso'],['CUP','Cuban Peso'],['CVE','Cape Verdean Escudo'],['CZK','Czech Republic Koruna'],['DJF','Djiboutian Franc'],['DKK','Danish Krone'],['DOP','Dominican Peso'],['DZD','Algerian Dinar'],['EGP','Egyptian Pound'],['ERN','Eritrean Nakfa'],['ETB','Ethiopian Birr'],['EUR','Euro'],['FJD','Fijian Dollar'],['FKP','Falkland Islands Pound'],['GBP','British Pound Sterling'],['GEL','Georgian Lari'],['GGP','Guernsey Pound'],['GHS','Ghanaian Cedi'],['GIP','Gibraltar Pound'],['GMD','Gambian Dalasi'],['GNF','Guinean Franc'],['GTQ','Guatemalan Quetzal'],['GYD','Guyanaese Dollar'],['HKD','Hong Kong Dollar'],['HNL','Honduran Lempira'],['HRK','Croatian Kuna'],['HTG','Haitian Gourde'],['HUF','Hungarian Forint'],['IDR','Indonesian Rupiah'],['ILS','Israeli New Sheqel'],['IMP','Manx pound'],['INR','Indian Rupee'],['IQD','Iraqi Dinar'],['IRR','Iranian Rial'],['ISK','Icelandic Króna'],['JEP','Jersey Pound'],['JMD','Jamaican Dollar'],['JOD','Jordanian Dinar'],['JPY','Japanese Yen'],['KES','Kenyan Shilling'],['KGS','Kyrgystani Som'],['KHR','Cambodian Riel'],['KMF','Comorian Franc'],['KPW','North Korean Won'],['KRW','South Korean Won'],['KWD','Kuwaiti Dinar'],['KYD','Cayman Islands Dollar'],['KZT','Kazakhstani Tenge'],['LAK','Laotian Kip'],['LBP','Lebanese Pound'],['LKR','Sri Lankan Rupee'],['LRD','Liberian Dollar'],['LSL','Lesotho Loti'],['LYD','Libyan Dinar'],['MAD','Moroccan Dirham'],['MDL','Moldovan Leu'],['MGA','Malagasy Ariary'],['MKD','Macedonian Denar'],['MMK','Myanma Kyat'],['MNT','Mongolian Tugrik'],['MOP','Macanese Pataca'],['MRU','Mauritanian Ouguiya'],['MUR','Mauritian Rupee'],['MVR','Maldivian Rufiyaa'],['MWK','Malawian Kwacha'],['MXN','Mexican Peso'],['MYR','Malaysian Ringgit'],['MZN','Mozambican Metical'],['NAD','Namibian Dollar'],['NGN','Nigerian Naira'],['NIO','Nicaraguan Córdoba'],['NOK','Norwegian Krone'],['NPR','Nepalese Rupee'],['NZD','New Zealand Dollar'],['OMR','Omani Rial'],['PAB','Panamanian Balboa'],['PEN','Peruvian Nuevo Sol'],['PGK','Papua New Guinean Kina'],['PHP','Philippine Peso'],['PKR','Pakistani Rupee'],['PLN','Polish Zloty'],['PYG','Paraguayan Guarani'],['QAR','Qatari Rial'],['RON','Romanian Leu'],['RSD','Serbian Dinar'],['RUB','Russian Ruble'],['RWF','Rwandan Franc'],['SAR','Saudi Riyal'],['SBD','Solomon Islands Dollar'],['SCR','Seychellois Rupee'],['SDG','Sudanese Pound'],['SEK','Swedish Krona'],['SGD','Singapore Dollar'],['SHP','Saint Helena Pound'],['SLL','Sierra Leonean Leone'],['SOS','Somali Shilling'],['SRD','Surinamese Dollar'],['SSP','South Sudanese Pound'],['STD','São Tomé and Príncipe Dobra (pre-2018)'],['STN','São Tomé and Príncipe Dobra'],['SVC','Salvadoran Colón'],['SYP','Syrian Pound'],['SZL','Swazi Lilangeni'],['THB','Thai Baht'],['TJS','Tajikistani Somoni'],['TMT','Turkmenistani Manat'],['TND','Tunisian Dinar'],['TOP','Tongan Pa anga'],['TRY','Turkish Lira'],['TTD','Trinidad and Tobago Dollar'],['TWD','New Taiwan Dollar'],['TZS','Tanzanian Shilling'],['UAH','Ukrainian Hryvnia'],['UGX','Ugandan Shilling'],['USD','United States Dollar'],['UYU','Uruguayan Peso'],['UZS','Uzbekistan Som'],['VEF','Venezuelan Bolívar Fuerte (Old)'],['VES','Venezuelan Bolívar Soberano'],['VND','Vietnamese Dong'],['VUV','Vanuatu Vatu'],['WST','Samoan Tala'],['XAF','CFA Franc BEAC'],['XAG','Silver Ounce'],['XAU','Gold Ounce'],['XCD','East Caribbean Dollar'],['XDR','Special Drawing Rights'],['XOF','CFA Franc BCEAO'],['XPD','Palladium Ounce'],['XPF','CFP Franc'],['XPT','Platinum Ounce'],['YER','Yemeni Rial'],['ZAR','South African Rand'],['ZMW','Zambian Kwacha'],['ZWL','Zimbabwean Dollar']]
+function ccPopulateDropdown(){
+	var ccSelectFrom = document.getElementById('efrom');
+	var ccSelectTo = document.getElementById('eto');
+	var csShowAll = true;
+	if (document.getElementById('ccmajorccsettingbox').checked) csShowAll = false;
+	ccSelectFrom.length = 0;
+	ccSelectTo.length = 0;
+	var tempCounter = 0;
+	var firstIndex = 0;
+	var secondIndex = 1;
+	for(j=0; j<listsArray.length; j++){
+		if ((csShowAll)||(majorCurrencies.indexOf(listsArray[j][0])>0)){
+			if ("BAM"==listsArray[j][0]){
+				listsArray[j][1] = "Bosnia-Herzegovina Con. Mark";
+			}
+			ccSelectFrom.options[tempCounter] = new Option((listsArray[j][0]+": "+listsArray[j][1]),listsArray[j][0]);
+			ccSelectTo.options[tempCounter] = new Option((listsArray[j][0]+": "+listsArray[j][1]),listsArray[j][0]);
+
+			if (listsArray[j][0]==currentFrom) firstIndex = tempCounter;
+			if (listsArray[j][0]==currentTo) secondIndex = tempCounter;
+			tempCounter++;
+		}
+	}
+	ccSelectFrom.options[firstIndex].selected = true;
+	ccSelectTo.options[secondIndex].selected = true;
+}
+ccPopulateDropdown();
+function timeConverter(UNIX_timestamp){
+	var a = new Date(UNIX_timestamp*1000);
+	var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+	var year = a.getFullYear();
+	var month = months[a.getMonth()];
+	var date = a.getDate();
+	var hour = a.getHours();
+	var min = a.getMinutes();
+	var sec = a.getSeconds();
+	var time = month + '. '+ date + ', ' + year + ', ' + hour + ':' + min + ':' + sec ;
+	return time;
+}
+if (document.getElementById('ccRateCredit')) document.getElementById('ccRateCredit').innerHTML  = "The results above are based on the " + timeConverter(1671555600) + " exchange rate from openexchangerates.org.";
+</script>
+
+<a name="customized-result"></a>
+<br><h2>Customized Currency Exchange Rate</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="3" id="standard" class="panel">
+<form action="/currency-calculator.html#customized-result">
+	<tr>
+		<td align="right">Exchange rate for currency A/B</td>
+		<td align="right"><input type="text" name="erate" id="erate" value="4" class="inlong"></td>
+		<td>Equivalent unit(s) of B compared to 1 unit of A</td>
+	</tr>
+	<tr>
+		<td align="right">Amount to exchange</td>
+		<td align="right"><input type="text" name="eamount2" id="eamount2" value="100" class="inlong"></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td><td colspan="2"><input type="hidden" name="type" value="2"><input type="image" src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg" value="Calculate" alt="Calculate" style="margin:10px;"></td>
+	</tr>
+</form>
+</table>
+<br><br>
+<h3>Market Exchange Rates Table</h3>
+<div id="lertnote"></div>
+<div id="lertmajor"></div>
+<div id="lertall"></div>
+<script>
+var listsArrayData = [["AED",3.67241],["AFN",87.499985],["ALL",107.6],["AMD",393.625743],["ANG",1.803123],["AOA",504.2583],["ARS",173.9244],["AUD",1.500487],["AWG",1.8],["AZN",1.7],["BAM",1.84427],["BBD",2],["BDT",102.692079],["BGN",1.84284],["BHD",0.37698],["BIF",2060],["BMD",1],["BND",1.351872],["BOB",6.913538],["BRL",5.2006],["BSD",1],["BTC",0.00005937389],["BTN",82.770014],["BWP",12.909816],["BYN",2.525549],["BZD",2.016734],["CAD",1.36187],["CDF",2033],["CHF",0.925981],["CLF",0.032117],["CLP",886.2],["CNH",6.961778],["CNY",6.9622],["COP",4779.547716],["CRC",584.281012],["CUC",1],["CUP",25.75],["CVE",104.5],["CZK",22.740994],["DJF",177.5],["DKK",6.995],["DOP",55.25],["DZD",137.4393],["EGP",24.701935],["ERN",15],["ETB",53.625],["EUR",0.940247],["FJD",2.2115],["FKP",0.823362],["GBP",0.823362],["GEL",2.655],["GGP",0.823362],["GHS",9],["GIP",0.823362],["GMD",61.9],["GNF",8776],["GTQ",7.863986],["GYD",209.323955],["HKD",7.787075],["HNL",24.699999],["HRK",7.0928],["HTG",146.0746],["HUF",378.460909],["IDR",15584.05],["ILS",3.46403],["IMP",0.823362],["INR",82.637088],["IQD",1460.238697],["IRR",41400],["ISK",142.44],["JEP",0.823362],["JMD",152.982498],["JOD",0.71],["JPY",131.07],["KES",123.2],["KGS",85.67],["KHR",4115],["KMF",464.299621],["KPW",900],["KRW",1284.66114],["KWD",0.30597],["KYD",0.833686],["KZT",467.604298],["LAK",17296.782656],["LBP",1522],["LKR",365.685699],["LRD",154.000004],["LSL",17.68],["LYD",4.83],["MAD",10.482189],["MDL",19.280904],["MGA",4430],["MKD",58.100501],["MMK",2101.066098],["MNT",3406.965265],["MOP",8.021266],["MRU",37.608935],["MUR",44.009205],["MVR",15.4],["MWK",1027.626225],["MXN",19.79155],["MYR",4.4245],["MZN",63.899991],["NAD",17.68],["NGN",445.96],["NIO",36.42],["NOK",9.89436],["NPR",132.431754],["NZD",1.579679],["OMR",0.385007],["PAB",1],["PEN",3.83],["PGK",3.52],["PHP",54.958994],["PKR",225.025],["PLN",4.395543],["PYG",7248.17405],["QAR",3.64125],["RON",4.6143],["RSD",110.335503],["RUB",70.501198],["RWF",1066],["SAR",3.760667],["SBD",8.21038],["SCR",13.289752],["SDG",569],["SEK",10.41893],["SGD",1.35059],["SHP",0.823362],["SLL",17665],["SOS",568.77469],["SRD",31.6],["SSP",130.26],["STD",22823.990504],["STN",23.375],["SVC",8.754266],["SYP",2512.53],["SZL",17.68],["THB",34.7],["TJS",10.190758],["TMT",3.51],["TND",3.15625],["TOP",2.34725],["TRY",18.6595],["TTD",6.806178],["TWD",30.7464],["TZS",2332],["UAH",36.772154],["UGX",3646.819963],["USD",1],["UYU",38.779367],["UZS",11300],["VES",15.55225],["VND",23755.817622],["VUV",118.044],["WST",2.69755],["XAF",616.761788],["XAG",0.04163204],["XAU",0.00054999],["XCD",2.70255],["XDR",0.752674],["XOF",616.761788],["XPD",0.00057972],["XPF",112.201347],["XPT",0.00098817],["YER",250.299955],["ZAR",17.327849],["ZMW",17.727183],["ZWL",322]];var majorCurrenciesIndex = ["USD","EUR","GBP","CNY","JPY","CAD","AUD"];
+var majorCurrenciesRates = [1,1,1,1,1,1,1];
+var majorCurrenciesIndex2 = ["USD","EUR","GBP"];
+var majorCurrenciesRates2 = [1,1,1];
+
+document.getElementById('lertnote').innerHTML  = "<p>The exchange rates below are based on the " + timeConverter(1671555600) + " exchange rate from openexchangerates.org.</p>";
+
+function ccShowRate(inNum){
+	if (inNum>0){
+		var ccPrec = -1*Math.log(inNum)/2.302585092994046;
+		if (ccPrec>2){
+			ccPrec = ccPrec - 2;
+		}else if (ccPrec>0){
+			ccPrec = ccPrec - 1;
+		}
+		ccPrec = Math.round(ccPrec+7);
+		if (ccPrec<1){
+			return Math.round(inNum);
+		}else{
+			if (ccPrec>10) ccPrec = 10;
+			var tempVal = Math.pow(10, ccPrec);
+			return Math.round(inNum*tempVal)/tempVal;
+		}
+	}else{
+		return inNum;
+	}
+}
+
+function ccPopulateMajor(){
+	var outPut1 = "<div><b>Major Currencies:</b></div><table  class=\"cinfoT \"><tr><td class=\"cinfoHd\">&nbsp;</td>";
+	var outPut2 = "";
+	for(j=0; j<majorCurrenciesIndex.length; j++){
+		for(i=0; i<listsArrayData.length; i++){
+			if (majorCurrenciesIndex[j]==listsArrayData[i][0]){
+				majorCurrenciesRates[j] = listsArrayData[i][1];
+			}
+		}
+	}
+	for(j=0; j<majorCurrenciesIndex.length; j++){
+		outPut1 += "<td class=\"cinfoHdL\">"+majorCurrenciesIndex[j]+"</td>";
+		outPut2 += "<tr><td>1 "+majorCurrenciesIndex[j]+"</td>";
+		for(i=0; i<majorCurrenciesIndex.length; i++){
+			if (i==j){
+				outPut2 += "<td class=\"cinfoBodL\">1</td>";
+			}else if (i==0){
+				outPut2 += "<td class=\"cinfoBodL\">"+ccShowRate(1/majorCurrenciesRates[j])+"</td>";
+			}else if (j==0){
+				outPut2 += "<td class=\"cinfoBodL\">"+ccShowRate(majorCurrenciesRates[i])+"</td>";
+			}else{
+				outPut2 += "<td class=\"cinfoBodL\">"+ccShowRate(majorCurrenciesRates[i]/majorCurrenciesRates[j])+"</td>";
+			}
+		}
+		outPut2 += "</tr>";
+	}
+	document.getElementById('lertmajor').innerHTML  = outPut1+"</tr>"+outPut2+"</table>";
+}
+ccPopulateMajor();
+
+function ccShowRate2(inNum){
+	return ccShowRate(inNum)+"<br>("+ ccShowRate(1/inNum)+")";
+}
+function ccPopulateOne(inIndex){
+	var fullName = "";
+	var rateInUSD = 1;
+	for(i=0; i<listsArrayData.length; i++){
+		if (inIndex==listsArrayData[i][0]){
+			rateInUSD = listsArrayData[i][1];
+			fullName = listsArray[i][1];
+		}
+	}
+
+	var outPut1 = "<br><div><b>"+inIndex+" ("+fullName+") v.s. Other Currencies:</b></div><table  class=\"cinfoT  \"><tr><td class=\"cinfoHd\"><a href=\"#\" onClick=\"return ccPopulateAll();\">&lt;&lt; Go Back</a></td>";
+	var outPut2 = "";
+
+	outPut1 += "<td class=\"cinfoHdL\">"+inIndex+"</td>";
+
+	for(j=0; j<listsArrayData.length; j++){
+		outPut2 += "<tr><td>1 "+listsArrayData[j][0]+'&ndash;'+listsArray[j][1]+"</td>";
+		outPut2 += "<td class=\"cinfoBodL\">"+ccShowRate2(rateInUSD/listsArrayData[j][1])+"</td>";
+		outPut2 += "</tr>";
+	}
+	document.getElementById('lertall').innerHTML  = outPut1+"</tr>"+outPut2+"</table>";
+	return false;
+}
+function ccPopulateAll(){
+	var outPut1 = "<br><div><b>All Currencies:</b></div><table class=\"cinfoT  \"><tr><td class=\"cinfoHd\">Click below to select a base currency</td>";
+	var outPut2 = "";
+	for(j=0; j<majorCurrenciesIndex2.length; j++){
+		outPut1 += "<td class=\"cinfoHdL\">"+majorCurrenciesIndex2[j]+"</td>";
+		for(i=0; i<listsArrayData.length; i++){
+			if (majorCurrenciesIndex2[j]==listsArrayData[i][0]){
+				majorCurrenciesRates2[j] = listsArrayData[i][1];
+			}
+		}
+	}
+	for(j=0; j<listsArrayData.length; j++){
+		outPut2 += "<tr><td><a href=\"#\" onClick=\"return ccPopulateOne('"+listsArrayData[j][0]+"');\">"+listsArrayData[j][0]+'&ndash;'+listsArray[j][1]+"</a></td>";
+		for(i=0; i<majorCurrenciesIndex2.length; i++){
+			outPut2 += "<td class=\"cinfoBodL\">"+ccShowRate2(majorCurrenciesRates2[i]/listsArrayData[j][1])+"</td>";
+		}
+		outPut2 += "</tr>";
+	}
+	document.getElementById('lertall').innerHTML  = outPut1+"</tr>"+outPut2+"</table><div>* numbers in parenthesis are the inverse</div>";
+	return false;
+}
+ccPopulateAll();
+</script>
+
+<h3>Important Key Terms</h3>
+<p>Below is a short list of some of the important terms pertinent to foreign currency exchange.</p>
+<p><b>Exchange Rate</b>&mdash;The value of one currency expressed in terms of another.</p>
+<p><b>Forex</b>&mdash;The foreign exchange market (forex) is a global, decentralized, over-the-counter market for the trading of currencies and is the largest market in the world (followed by the credit market). This market is a necessity because one unit of currency very rarely equals exactly one unit of another currency. The forex is able to facilitate the receipt or payment of units of currency that are equal in value.</p>
+<p><b>Bid Price</b>&mdash;The price that a buyer is willing to pay for a unit of currency.</p>
+<p><b>Ask Price</b>&mdash;The price that a seller is willing to accept for a unit of currency.</p>
+<p><b>Bid-Ask Spread</b>&mdash;The difference between the bid and ask price. Theoretically, buyers want the smallest possible spreads, while sellers want the highest spreads. Real-world currency exchanges with brokers, banks, or businesses typically do not follow precise market rates. As financial middlemen, most will set exchange rates of their own at bid-ask spreads that return a percentage as profit for doing business. Some call this profit a fee or commission.</p>
+<p><b>Pip</b>&mdash;A pip is the smallest unit of value in a bid-ask spread. For example, 3 pips are the difference between the currency quote of EUR/USD 1.2800/1.2803. A pip is sometimes called a point.</p>
+<p><b>Currency Pair</b>&mdash;A quote of the relative value of one currency unit against another currency unit. The first currency in a currency pair is called the base currency, while the second is called the quote currency.</p>
+<p><b>Interbank (bank-to-bank) Rate</b>&mdash;This is the wholesale exchange rate that banks use between themselves.</p>
+<p><b>Major Currencies</b>&mdash;This refers to a short list of the most traded currencies, which generally stay the same year-to-year. Most recently, this includes the U.S. dollar (USD), Euro (EUR), Japanese yen (JPY), British pound (GBP), Australian dollar (AUD), Canadian dollar (CAD), and the Swiss franc (CHF). The USD in a currency pair with any of the others is known as a major currency pair.</p>
+
+<h3>What is Currency?</h3>
+<p>Currency is a universal medium of exchange for goods and services in an economy, and it is believed to have been used as such dating back at least 3,000 years. Before this, it is assumed that bartering, which is the exchange of goods and services without the use of money, was likely used. Throughout history, currency has taken many different forms. Some examples include coins, barley, gold, silver, squirrel pelts, 8-ton carved limestone rocks, salt, knives, cowrie shells, stamps, potato mashers, peppercorn, tea bricks, and cheese.</p>
+
+<p><b>History of Currency</b></p>
+<p>As history has shown, anything that a group of people in an economy attaches value to can be used as currency. The first "official" currency was minted in the seventh century BC by King Alyattes of Lydia in modern-day Turkey. For practical reasons, Lydian currency took on the form of a round coin, which became the first ever standardized unit of currency. Paper currency, on the other hand, was invented in Asia and was brought back to Europe by Marco Polo after his travels to Asia.</p>
+
+<p><b>Modern Currency</b></p>
+<p>Modern currency is much more uniform and regulated. Major currencies in the world today take on the physical form of paper bills or coins which are easily carried on a person, but most of a person's currency is typically stored in digital accounts. The value of these currencies is backed by the promise of their issuing governments, which makes them fiat money (currency declared by the government to be an official medium of payment but is not backed by a physical commodity). Before fiat money existed, currencies were usually backed by a commodity such as gold or silver.</p>
+<p>While modern currency is physically represented by coins and paper bills, most large-scale currency transactions are done electronically. Modern technology utilizes sophisticated currency exchange mechanisms and systems to exchange currencies between digital accounts rather than physically. Even the exchange of currency for everyday goods and services such as groceries or haircuts involves physical currencies less and less due to the growing popularity of debit cards, credit cards, and mobile payments.</p>
+
+<p><b>Cryptocurrency</b></p>
+<p>Cryptocurrencies are digital currencies operating independently of a central bank or authority, in which encryption techniques are used to regulate the generation of units of currency as well as to verify the transfer of funds. The current technology behind cryptocurrencies is called blockchain, which is a decentralized ledger of all transactions across a peer-to-peer network. A prominent feature of blockchain is that participants can confirm transactions without the need for a central clearing authority, such as a central bank or government. The value of cryptocurrencies fluctuates, just like a regular currency, and they can be traded in the same way as any other currency. While bitcoin is currently the most recognizable cryptocurrency with the largest market cap by far, there are many other notable cryptocurrencies such as Ethereum (ETH), Litecoin (LTC), and Ripple (XRP). Some experts say that there is a slight chance that cryptocurrencies become the currency of the future. For the purposes of this calculator, Bitcoin is the only cryptocurrency available for conversion at the moment.</p>
+
+<h3>Forex and Exchange Rates</h3>
+<p>Currencies used in different countries are rarely, if ever, exactly equal in value. As a result, exchange rates (the rate at which a currency is exchanged for another) exist to enable the equal exchange of currencies. Real-time exchange rates are supplied by the foreign exchange market (forex), the same place where most currency transactions take place. The forex is a global, decentralized, over-the-counter market for the trading of currencies. Each day, trillions of dollars (US) worth of currency are traded. The market functions at high speeds, with exchange rates changing every second. The most common forex transactions are exchanges between the U.S. dollar and European euro, the U.S. dollar and the Japanese yen, and the U.S. dollar to the British pound Sterling.</p>
+<p><b>Forex Quotes</b></p>
+<p>A forex quote always consists of two currencies, a base currency and a quote currency, sometimes called the counter currency. The most common base currencies are EUR (European Union euros), GBP (British pounds), AUD (Australian dollars), and USD (U.S. dollars). The following is an example of a forex quote:</p>
+<p align="center"><b>EUR/USD 1.366</b></p>
+<p>In this example, EUR is the base currency and USD is the quote currency, and what it means is that one euro is worth $1.366 USD. In other words, $1.366 is the purchase price in U.S. dollars (aside from external costs such as commission) of one euro. The base currency always equals exactly one. On the other hand, if the EUR/MXN rate (European Union euro to Mexican peso) is 17.70 instead, 17.70 Mexican pesos are required to purchase one euro. In the real world, most exchange rates are given in terms of how much a U.S. dollar is worth in a foreign currency. The euro is different in that it's given in terms of how much a euro is worth in U.S. dollars.</p>
+<p>When buying foreign currencies, there are usually two prices listed: the buying rate and the selling rate. They are sometimes called the "bid price" and "ask price" for the currency pair, respectively. Buying foreign currency from a bank or exchange broker involves the selling (ask) price, which is usually higher than the buying price because, like all merchants, currency brokers sell high and buy low.</p>
+
+<h3>Factors that Influence Exchange Rates Between Currencies</h3>
+<p>In the real world, the exchange rates can be influenced by thousands of different factors. The following are a few:</p>
+<ul>
+	<li><b>Differences in inflation</b>&mdash;From an international currency exchange standpoint, the currency of one economy with low inflation rates will generally see a rise in currency value as purchasing power increases. The currency of another economy with higher inflation will usually depreciate in relation to a lower inflation currency.</li>
+	<li><b>Differences in interest rates</b>&mdash;the interest rates may affect the demand of a currency as well as the inflation rate of an economy, which can drive the exchange rates up or down.</li>
+	<li><b>Trade Deficits</b>&mdash;If an economy is spending more than it is earning through foreign trade (goods, services, interest, dividends, etc.), it is operating at a deficit. In other words, it requires more foreign currency than it receives through the sale of exports, supplying more of its own currency than foreigners demand for its products.</li>
+	<li><b>Politics</b>&mdash;Governments can enact policies or regulations that directly or indirectly impact exchange rates. Also, economies with stable politics generally make better foreign investments than economies that constantly suffer from political strife. Perceived instability causes a loss of confidence in currencies within economies and a movement of foreign funds into more stable economies.</li>
+	<li><b>Economic performance</b>&mdash;The performance of economies also dictates the exchange rate of their currencies. When global capital searches for the best place to make a return, strong economies are usually a good choice. As a result, an influx of capital into a certain economy will increase the buying power of that economy's currency.</li>
+</ul>
+
+<h3>Some Tips for Traveling Overseas</h3>
+<p>Anyone who desires to travel to a destination that uses a different currency can benefit from doing some research in advance.</p>
+<ul>
+	<li>Whether exchange rates are better abroad or domestically depends a lot on the destination, but generally, it is better to exchange domestically before traveling to a foreign destination. There are fewer time constraints, and exchanging domestically removes the possibility of encountering difficulties that may arise from trying to exchange money in an unfamiliar region where a person may not speak the language. In the U.S., some banks and credit unions provide exchange services that normally provide better exchange rates and lower fees than other methods. It is also possible to order foreign currency on some currency converting websites that will deliver it via mail. In addition, international airports normally have kiosks or stores for currency exchange. They are convenient, but they normally have the worst exchange rates and highest fees.</li>
+	<li>When buying currency abroad, most people will simply choose the most convenient option, typically kiosks situated in airports, hotels, and high-traffic tourist areas that take advantage of desperate people who can't be bothered to look for better deals. It is advisable to first search for an overseas branch or ATM of your bank. Otherwise, local banks and fee-friendly ATMs normally have better deals.</li>
+	<li>Destinations that are credit card friendly make it easier for foreigners with credit cards or debit cards, as they don't have to fumble over large amounts of foreign cash or pay large commissions, since credit card or debit card exchange rates tend to be pretty close to wholesale market rates. Also, credit cards and debit cards are probably a safer alternative to holding a bunch of cash. However, keep in mind that a lot of cards not oriented towards travel perks will have foreign transaction fees.</li>
+	<li>It is common for people to come back from foreign destinations with some foreign currency left over. There's not much else to do with it aside from keeping it as memorabilia, but it is possible to sell it back to a bank or broker. Again, selling back to banks or credit unions is normally preferred in terms of exchange rates and fees.</li>
+</ul>
+
+
+
+</div>
+	<div id="right">
+		<div style="padding-top:10px;  min-height:280px; text-align:center;">
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+	googletag.defineSlot('/1057446/Calculator-Top-Right-Desktop', [[300, 250], [336, 280]], 'div-gpt-ad-1589567013929-0').addService(googletag.pubads());
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+  });
+</script>
+<!-- /1057446/Calculator-Top-Right-Desktop -->
+<div id='div-gpt-ad-1589567013929-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1589567013929-0'); });
+  </script>
+</div>
+</div>
+<table align="center" id="searchbox"><form name="calcSearchForm" onsubmit="calcSearch(); return false;" autocomplete="off"><tr><td><input type="text" name="calcSearchTerm" id="calcSearchTerm" class="inlongest" onkeyup="return calcSearch();"></td><td><span id="bluebtn" onClick="return calcSearch();">Search</span></td></tr><tr><td colspan="2"><div id="calcSearchOut"></div></td></tr></form></table><div id="othercalc"><div id="octitle"><a href="/financial-calculator.html">Financial Calculators</a></div><div id="occontent"><a href="/mortgage-calculator.html">Mortgage</a><a href="/loan-calculator.html">Loan</a><a href="/auto-loan-calculator.html">Auto Loan</a><a href="/interest-calculator.html">Interest</a><a href="/payment-calculator.html">Payment</a><a href="/retirement-calculator.html">Retirement</a><a href="/amortization-calculator.html">Amortization</a><a href="/investment-calculator.html">Investment</a><a href="/currency-calculator.html">Currency</a><a href="/inflation-calculator.html">Inflation</a><a href="/finance-calculator.html">Finance</a><a href="/mortgage-payoff-calculator.html">Mortgage Payoff</a><a href="/tax-calculator.html">Income Tax</a><a href="/compound-interest-calculator.html">Compound Interest</a><a href="/salary-calculator.html">Salary</a><a href="/401k-calculator.html">401K</a><a href="/interest-rate-calculator.html">Interest Rate</a><a href="/sales-tax-calculator.html">Sales Tax</a><a href="/financial-calculator.html">More Financial Calculators</a></div><div id="ocother"><a href="/financial-calculator.html">Financial</a> | <a href="/fitness-and-health-calculator.html">Fitness and Health</a> | <a href="/math-calculator.html">Math</a> | <a href="/other-calculator.html">Other</a></div></div>	</div>
+</div>
+<div id="clear"></div>
+<div id="footer"><div id="footerin"><div id="footernav"><a href="/about-us.html">about us</a> | <a href="/sitemap.html">sitemap</a> | <a href="/about-us.html#terms">terms of use</a> | <a href="/about-us.html#privacy">privacy policy</a> &nbsp;  &copy; 2008 - 2022 <a href="//www.calculator.net">calculator.net</a></div></div></div>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3068863-11']);
+_gaq.push(['_trackPageview','/currency-calculator.html_____Section_1_CZ__do']);
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script><div class="topNavAbs">
+<a href="/financial-calculator.html" class="topNavOn">Financial</a>
+<a href="/fitness-and-health-calculator.html">Fitness &amp; Health</a>
+<a href="/math-calculator.html">Math</a>
+<a href="/other-calculator.html">Other</a>
+</div>
+</body>
+</html>

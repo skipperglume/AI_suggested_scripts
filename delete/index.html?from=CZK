@@ -1,0 +1,1445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://polyfill.io">
+<link rel="preload" as="style" href="https://use.typekit.net/bhw2bat.css" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google.com">
+<link rel="canonical" href="https://www.oanda.com/currency-converter/en/" />
+<script src="https://cdn.optimizely.com/js/19963491707.js"></script>
+<script>(function(o,a,n,d,a_){o[d]=o[d]||[];o[d].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=a.getElementsByTagName(n)[0], j=a.createElement(n),dl=d!='dataLayer'?'&l='+d:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+a_+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WS72N4');</script>
+<title>Currency Converter | Foreign Exchange Rates | OANDA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Use our free currency converter. Get accurate and reliable foreign exchange rates, based on OANDA Rates™.">
+<meta property="og:title" content="Currency Converter | Foreign Exchange Rates | OANDA" />
+<meta property="og:type" content="webpage" />
+<meta property="og:url" content="https://www.oanda.com/currency-converter/en/" />
+<meta property="og:description" content="Use our free currency converter. Get accurate and reliable foreign exchange rates, based on OANDA Rates™.">
+<meta property="twitter:description" content="Use our free currency converter. Get accurate and reliable foreign exchange rates, based on OANDA Rates™.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@OANDA">
+<meta name="twitter:title" content="Currency Converter | Foreign Exchange Rates | OANDA">
+<link rel="stylesheet" href="/assets/css/oanda.6e7c00de218d.css">
+<meta name="apple-mobile-web-app-title" content="OANDA">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon-180x180.d4e560658872.png">
+<link rel="shortcut icon" href="/assets/images/favicon.2555ea98866d.ico">
+<link rel="alternate" hreflang="en" href="https://www.oanda.com/currency-converter/en/">
+<link rel="alternate" hreflang="zh" href="https://www.oanda.com/currency-converter/zh/">
+<link rel="alternate" hreflang="fr" href="https://www.oanda.com/currency-converter/fr/">
+<link rel="alternate" hreflang="ja" href="https://www.oanda.com/currency-converter/ja/">
+<link rel="alternate" hreflang="ru" href="https://www.oanda.com/currency-converter/ru/">
+<link rel="alternate" hreflang="pt" href="https://www.oanda.com/currency-converter/pt/">
+<link rel="alternate" hreflang="it" href="https://www.oanda.com/currency-converter/it/">
+<link rel="alternate" hreflang="es" href="https://www.oanda.com/currency-converter/es/">
+<link rel="alternate" hreflang="de" href="https://www.oanda.com/currency-converter/de/">
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+<script src="/assets/js/jquery.220afd743d9e.js" defer></script>
+<script src="/assets/js/vue.47220dbcb227.js" defer></script>
+<script src="/assets/js/common.beea4530572e.js" defer></script>
+<script src="/assets/js/instantpage.31a81fa6cd68.js" type="module" defer></script>
+<link href="/assets/css/skeleton.f11348fd0615.css" type="text/css" media="all" rel="stylesheet">
+<link href="/assets/css/cc_live_rates_block.25992700c018.css" type="text/css" media="all" rel="stylesheet">
+<link href="/assets/css/collection_block.ec15ae31329e.css" type="text/css" media="all" rel="stylesheet">
+<link href="/assets/css/faq.dd46a6d6f754.css" type="text/css" media="all" rel="stylesheet">
+<link href="/assets/css/currency_profiles.eb47949636d6.css" type="text/css" media="all" rel="stylesheet">
+<script src="https://www.googletagservices.com/tag/js/gpt.js" defer></script>
+<script src="/assets/js/block__faq.c18c4f1a26fe.js" defer></script>
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="/assets/css/currency_converter_page.70ac6a0c2a3d.css">
+<link rel="stylesheet" media="print" href="/assets/css/currency_converter_print.9f2a5241255d.css" />
+<script src="/assets/js/react.min.109fa0e99840.js"></script>
+<script src="/assets/js/react-dom.min.e006d80d645b.js"></script>
+<script src="/assets/js/windowEvents.ee68d5752692.js" defer></script>
+<script>
+        const base = localStorage.getItem('baseCurrency')
+        const quote = localStorage.getItem('quoteCurrency')
+        const lang = localStorage.getItem('lang')
+        window.jsBridge = {
+            amountParamName: "amount",
+            quoteParamName: "to",
+            baseParamName: "from",
+            defaultAmount: "1",
+            is_indexed: "False"
+        }
+        window.ReactBridge = {
+            baseCurrency: (lang =='en'? base: null)||'EUR',
+            quoteCurrency: (lang =='en'? quote: null)||'USD',
+            locale: 'en'
+        }
+        if (lang != 'en' || !base ) {
+            localStorage.setItem('baseCurrency', 'EUR');
+        }
+        if(lang != 'en' || !quote) {
+            localStorage.setItem('quoteCurrency', 'USD');
+        }
+        localStorage.setItem('lang', 'en');
+        localStorage.setItem('currencyAmount', '1');
+    </script>
+<link rel="preload" href="/assets/dist-fonts/material-icons/MaterialIcons-Regular.570eb83859dc.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="" id="top">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS72N4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="scroll-wrap">
+<div id="nav-occlude"></div>
+<region-alert-banner page-id="4822" region-selector-url="https://www.oanda.com/region-selector/" region-selector-text="Choose country or region" btn-text="Continue">
+<template v-slot:msg>
+Choose another country or region to see content specific to your location
+</template>
+</region-alert-banner>
+<div class="navigation-primary">
+<div class="container">
+<div class="row js-primary-marker">
+<div class="js-marker slide__marker"></div>
+<a class="navigation-primary__logo" href="/">
+<img alt="OANDA_FXDS_Logo_Light__nopadding_v0.01" height="44" src="/media/images/OANDA_FXDS_Logo_Light__nopadding_v0.01.height-60.png" width="">
+</a>
+<div class="navigation-primary__mega-nav-title js-dropdown-group">
+<div class="js-dropdown dropdown">
+<div class="dropdown-link js-dropdown-toggle"><span>Menu</span><i class="dropdown-arrow material-icons">expand_more</i></div>
+<div class="js-dropdown-target dropdown__container mega-nav">
+ <div class="js-ref-height">
+<div class="mega-nav__main-content">
+<h2>Products &amp; services</h2>
+<div class="mega-nav__service-list">
+<h3>Trading</h3>
+<a href="/#cfd-trading" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/trading_colour.e605cf03b993.svg" alt="Trading">
+<div class="mega-nav__service-description">
+<h4>Trading</h4>
+<p>Globally recognized broker with experience in financial services dating back to 1996</p>
+</div>
+</a>
+</div>
+<div class="mega-nav__service-list">
+<h3>Foreign exchange data services</h3>
+<a href="/foreign-exchange-data-services/" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/sfb_colour.6603e1245143.svg" alt="Foreign Exchange Data Services">
+<div class="mega-nav__service-description">
+<h4>Foreign Exchange Data Services</h4>
+<p>Accurate and reliable FX services and exchange rate data from a provider you can trust</p>
+</div>
+</a>
+<a href="/foreign-exchange-data-services/en/historical-currency-converter/" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/historical-currency-converter.a97b0d5892cd.svg" alt="Historical currency converter">
+<div class="mega-nav__service-description">
+<h4>Historical currency converter</h4>
+<p>Access data dating back to 1990 for over 38,000 FX pairs, with charting capabilities and each exporting options.</p>
+</div>
+</a>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/exchange-rates-api.2c68b5fb640a.svg" alt="Exchange rates API">
+<div class="mega-nav__service-description">
+<h4>Exchange rates API</h4>
+<p>Our Exchange Rates API delivers data on 200+ currencies, commodities and precious metals.</p>
+</div>
+</a>
+</div>
+<div class="mega-nav__service-list">
+ <h3>FX Payments</h3>
+<a href="https://www.shiftconnect.com/oanda/" class="mega-nav__service" rel="nofollow,noreferer,noopener">
+<img class="service-icon" src="/assets/images/business-icons/money-transfer_colour.12693eac05a7.svg" alt="Corporate">
+<div class="mega-nav__service-description">
+<h4>Corporate</h4>
+<p>An easy-to-use and reliable international money transfer solution for businesses.</p>
+</div>
+</a>
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="mega-nav__service" rel="nofollow,noreferer,noopener">
+<img class="service-icon" src="/assets/images/business-icons/money-transfer_colour.12693eac05a7.svg" alt="Individual">
+<div class="mega-nav__service-description">
+<h4>Individual</h4>
+<p>We have partnered with Wise so you can send money abroad for less.</p>
+</div>
+</a>
+</div>
+</div>
+<div class="mega-nav__footing-content">
+<h2 class>About OANDA</h2>
+<div class="mega-nav__service-list">
+<a href="/group/" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/oanda_colour.4e08e16458b1.svg" alt="Group">
+<div class="mega-nav__service-description">
+<h4>Group</h4>
+</div>
+</a>
+<a href="https://www.marketpulse.com/" class="mega-nav__service" rel="">
+<img class="service-icon" src="/assets/images/business-icons/market-pulse_colour.06b80e4bceab.svg" alt="MarketPulse">
+<div class="mega-nav__service-description">
+<h4>MarketPulse</h4>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation-primary__local">
+<div class="local-nav js-dropdown-group">
+<div class="js-local-nav-width local-nav__container">
+<div class="js-dropdown dropdown">
+
+<a class="dropdown-link" href="https://www.oanda.com/fx-for-business/fxdata-app" rel="">
+<i class="material-icons">person</i>
+Data Services Login
+</a>
+</div>
+<div class="js-dropdown dropdown">
+<span class="dropdown-link js-dropdown-toggle">
+<i class="material-icons">help</i>
+Help
+<i class="dropdown-arrow material-icons ">expand_more</i>
+</span>
+<div class="js-dropdown-target dropdown__container">
+<div class="dropdown__height">
+<ul class="js-ref-height dropdown__content">
+<li>
+<a href="/foreign-exchange-data-services/en/faq-help-portal/" rel="">
+<i class="material-icons">info</i>
+Support
+</a>
+</li>
+<li>
+<a href="mailto:frontdesk@oanda.com" rel="">
+<i class="material-icons">email</i>
+Email
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="js-dropdown dropdown dropdown--region">
+<a href="#" class="dropdown-link"><i class="material-icons">language</i> EN <i class="dropdown-arrow material-icons js-dropdown-toggle">expand_more</i></a>
+<div class="js-dropdown-target dropdown__container">
+<div class="dropdown__height">
+<ul class="js-ref-height dropdown__content">
+<li>
+<a class="current" href="https://www.oanda.com/currency-converter/en/"><i class="material-icons">done</i>English</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/de/">Deutsche</a>
+ </li>
+<li>
+<a href="https://www.oanda.com/currency-converter/es/">Español</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/pt/">Português</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/fr/">Français</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/it/">Italiano</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/ru/">PУ</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/zh/">繁體中文</a>
+</li>
+<li>
+<a href="https://www.oanda.com/currency-converter/ja/">日本</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation-secondary js-navigation-secondary  js-no-secondary" data-scroll="relative">
+<div class="navigation-secondary__container container">
+<div class="navigation-secondary__top">
+<div class="navigation-secondary__hamburger-menu js-offCanvasToggle">
+<div class="icons">
+<span class="navigation-secondary__hamburger-link open"><i class="navigation-secondary__hamburger-link open material-icons">menu</i></span>
+<span class="navigation-secondary__hamburger-link close"><i class="material-icons">close</i></span>
+</div>
+</div>
+<div class="navigation-secondary__logo">
+<a href="">
+<img src="/assets/images/oanda-logo-dark.20c07a610066.svg" alt="OANDA Logo" height="40">
+</a>
+</div>
+</div>
+<div class="navigation-secondary__row js-secondary-nav-parent">
+<div id="tray"></div>
+<div class="navigation-secondary__logo">
+<a href="">
+<img src="/assets/images/oanda-logo-dark.20c07a610066.svg" alt="OANDA Logo" height="40">
+</a>
+</div>
+<nav class="navigation-secondary__nav js-secondary-nav" data-lvlSet="">
+<div class="navigation-additional js-nav-list" data-lvlget="0">
+<div class="navigation-aditional__link js-nav-list-item" data-lvlget="1">
+<a href="https://www.oanda.com/fx-for-business/fxdata-app" rel="">
+<i class="material-icons left">person</i>
+Data Services Login
+</a>
+</div>
+</div>
+<div class="navigation-additional js-nav-list" data-lvlget="0">
+<div class="navigation-aditional__link js-nav-list-item" data-lvlget="1">
+<span class="js-nav-child">
+<i class="material-icons left">help</i>
+Help
+<i class="material-icons ">keyboard_arrow_right</i>
+</span>
+<div class="menu-group">
+<div class="menu-group__container">
+<div class="menu-group__link-list menu-group__link-list-1 nav-list js-nav-list" data-lvlget="0">
+<span class="nav-title nav-title js-nav-parent" data-lvlget="0"><i class="material-icons left">arrow_back</i>
+Back
+</span>
+<div class="menu-group__link js-group-link">
+<a href="/foreign-exchange-data-services/en/faq-help-portal/" rel="">
+<i class="material-icons left">info</i>
+Support
+</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="mailto:frontdesk@oanda.com" rel="">
+<i class="material-icons left">email</i>
+Email
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-nav-main__mobile">
+<h2>Products &amp; services</h2>
+<h3>Trading</h3>
+<ul class="mega-nav__service-list">
+<li>
+<a href="/#cfd-trading" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/trading_colour.e605cf03b993.svg" alt="Trading">
+<h4>Trading</h4>
+</a>
+</li>
+</ul>
+<h3>Foreign exchange data services</h3>
+<ul class="mega-nav__service-list">
+<li>
+<a href="/foreign-exchange-data-services/" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/sfb_colour.6603e1245143.svg" alt="Foreign Exchange Data Services">
+<h4>Foreign Exchange Data Services</h4>
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/historical-currency-converter/" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/historical-currency-converter.a97b0d5892cd.svg" alt="Historical currency converter">
+<h4>Historical currency converter</h4>
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/exchange-rates-api.2c68b5fb640a.svg" alt="Exchange rates API">
+<h4>Exchange rates API</h4>
+</a>
+</li>
+</ul>
+<h3>FX Payments</h3>
+<ul class="mega-nav__service-list">
+<li>
+<a href="https://www.shiftconnect.com/oanda/" class="rm-icon" rel="nofollow,noreferer,noopener">
+<img class="service-icon left" src="/assets/images/business-icons/money-transfer_colour.12693eac05a7.svg" alt="Corporate">
+<h4>Corporate</h4>
+</a>
+</li>
+<li>
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="rm-icon" rel="nofollow,noreferer,noopener">
+<img class="service-icon left" src="/assets/images/business-icons/money-transfer_colour.12693eac05a7.svg" alt="Individual">
+<h4>Individual</h4>
+</a>
+</li>
+</ul>
+<div class="mega-nav__footing-links__mobile">
+<h3>About OANDA</h3>
+<ul class="mega-nav__service-list">
+<li>
+<a href="/group/" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/oanda_colour.4e08e16458b1.svg" alt="Group">
+<div class="mega-nav__service-description">
+<h4>Group</h4>
+</div>
+</a>
+</li>
+<li>
+<a href="https://www.marketpulse.com/" class="rm-icon" rel="">
+<img class="service-icon left" src="/assets/images/business-icons/market-pulse_colour.06b80e4bceab.svg" alt="MarketPulse">
+<div class="mega-nav__service-description">
+<h4>MarketPulse</h4>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="nav_languages">
+<h3 class="nav_languages__heading">Language</h3>
+<div class="navigation-additional js-nav-list" data-lvlget="0">
+<div class="navigation-aditional__link js-nav-list-item" data-lvlget="1">
+<span class="js-nav-child">
+<i class="material-icons left">language</i>English <i class="material-icons js-nav-child">keyboard_arrow_right</i>
+</span>
+<div class="menu-group">
+<div class="menu-group__container">
+<div class="menu-group__link-list menu-group__link-list-1 nav-list js-nav-list" data-lvlget="0">
+<span class="nav-title nav-title js-nav-parent" data-lvlget="0"><i class="material-icons left">arrow_back</i>
+Back
+</span>
+<div class="menu-group__link js-group-link">
+<a class="current" href="https://www.oanda.com/currency-converter/en/"><i class="material-icons left">done</i>English</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/de/">Deutsche</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/es/">Español</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/pt/">Português</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/fr/">Français</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/it/">Italiano</a>
+</div>
+ <div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/ru/">PУ</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/zh/">繁體中文</a>
+</div>
+<div class="menu-group__link js-group-link">
+<a href="https://www.oanda.com/currency-converter/ja/">日本</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<main>
+<div class="block content-cards-lite-row card-content_card_lite_row background--white">
+<div class="block__container">
+<div class="content-cards content-cards--equal-height">
+<div class="ad-block align--center col">
+<script>
+            let gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6_mapping;
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+                gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6_mapping = googletag.sizeMapping()
+                    
+                    
+                        .addSize([1024, 200], [[970, 90], [728, 90]])
+                    
+                        .addSize([768, 200], [[728, 90]])
+                    
+                        .addSize([375, 200], [[320, 50]])
+                    
+                        .addSize([0, 0], [])
+                    
+                    .build();
+            googletag
+                .defineSlot(
+                    '/22424087480/oanda/currency_converter', [320, 50], 'gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6')
+                .defineSizeMapping( gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6_mapping )
+                .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+<style>
+            @media screen and (min-width: 1024px) {
+                #gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6.ad-block__inner {
+                    min-height: 90px;
+                    min-width: 728px;
+                }
+            }
+        </style>
+<div class="ad-block__inner" id="gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6">
+<script>
+                googletag.cmd.push(function() {
+                    googletag.display('gpt_ad_391_6e0a6fc5_991b_4a32_af1c_582a6aad10d6');
+                });
+            </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block content-cards-lite-row card-currency_converter_row background--white">
+<div class="block__container">
+<div class="content-cards content-cards--equal-height">
+<div class="col h1_title_block">
+<div class="h1_title">Currency Converter</div>
+<div class="h1_subtitle">
+<span class="help-text">Over 31 years of currency data. Powered by</span>
+<img src="/assets/images/oanda-logo-dark.20c07a610066.svg" width="42" height="12" alt="OANDA Logo">
+</div>
+</div>
+<div class="col cta">
+<div class="card-content cta-lite">
+<a href="https://www.shiftconnect.com/oanda/" class="btn btn-lite btn--secondary btn--blue btn--rectangle" rel="nofollow,noreferer,noopener">
+
+Corporate FX payments
+</a>
+</div>
+<div class="card-content cta-lite">
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="btn btn-lite btn--primary btn--blue btn--rectangle" rel="nofollow,noreferer,noopener">
+<span class="inline-wrapper">
+<i class="material-icons inline">send</i>
+</span>
+Send money
+</a>
+</div>
+</div>
+<div class="content-card-lite content-cards__card card-main">
+<div class="content-cards__card__inner background--transparent border-- drop-shadow content-cards__card--rounded">
+<div class="card-content">
+<div id="cc-main-conversion-block">
+
+</div>
+<div class="card-content-row ">
+<a href="?from=EUR&to=USD&amount=1" class="advanced-data-link" id="advanced_data_link">
+Advanced Currency Data
+</a>
+<a href="javascript:window.print()" class="print_link">
+<span class="material-icons">print</span>Print
+</a>
+</div>
+<script>
+            window.ReactBridge = {
+              ...window.ReactBridge,
+              environment: 'production',
+              popularCurrencies: '["JPY", "GBP"]',
+              currencies: '[{\u0022code\u0022: \u0022ADF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ad\u0022, \u0022name\u0022: \u0022Andorran Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Andorran franc (ADF) was the currency of Andorra. It circulated along with the Andorran peseta (ADP). It was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ADF\u0022}, {\u0022code\u0022: \u0022ADP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ad\u0022, \u0022name\u0022: \u0022Andorran Peseta\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Andorran peseta (ADP) was the currency of Andorra. It circulated along with the Andorran franc (ADF). It was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ADP\u0022}, {\u0022code\u0022: \u0022AED\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ae\u0022, \u0022name\u0022: \u0022Utd. Arab Emir. Dirham\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The United Arab Emirates dirham (AED) is the currency of the United Arab Emirates. One dirham is divided into 100 fils. The United Arab Emirates dirham is pegged to the US dollar at the exchange rate of 1 USD \u003D 3.6725 AED.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/aed/\u0022}, {\u0022code\u0022: \u0022AFA\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022af\u0022, \u0022name\u0022: \u0022Afghanistan Old Afghani\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/AFA\u0022}, {\u0022code\u0022: \u0022AFN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022af\u0022, \u0022name\u0022: \u0022Afghan Afghani\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Afghan afghani (AFN) is the currency of Afghanistan. It is subdivided into 100 puls, with these coins being no longer in circulation. The symbol of the Afghan afghani is \u005Cu060b.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022ALL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022al\u0022, \u0022name\u0022: \u0022Albanian Lek\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Albanian lek (ALL) is the currency of Albania. It was subdivided into 100 qindarka. Qindarka coins are no longer issued due to inflation. The symbol of the Albanian lek is L.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ALL\u0022}, {\u0022code\u0022: \u0022AMD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022am\u0022, \u0022name\u0022: \u0022Armenian Dram\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Armenian dram (AMD) is the currency of Armenia and Artsakh. It is subdivided into 100 luma. The symbol of the Armenian dram is \u005Cu058f. The currency\u005Cu2019s name \u005Cu2018dram\u005Cu2019 means \u005Cu2018money\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/AMD\u0022}, {\u0022code\u0022: \u0022ANG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cw\u0022, \u0022name\u0022: \u0022NL Antillian Guilder\u0022, \u0022hypernym\u0022: \u0022Curacao, Sint Maarten\u0022, \u0022bio\u0022: \u0022The Netherlands Antillean Guilder (ANG) is the currency of Cura\u005Cu00e7ao and Sint Maarten. It is also known as the Dutch guilder and is subdivided into 100 cents. The symbol of the Netherlands Antillean guilder is NA\u005Cu0192.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ANG\u0022}, {\u0022code\u0022: \u0022AOA\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ao\u0022, \u0022name\u0022: \u0022Angolan Kwanza\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Angolan kwanza (AOA) is the currency of Angola. The currency was introduced in 1999. The Angolan kwanza is subdivided into 100 centimos. The symbol of the kwanza is Kz. The currency\u005Cu2019s name comes from the Kwanza River.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/AOA\u0022}, {\u0022code\u0022: \u0022AON\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ao\u0022, \u0022name\u0022: \u0022Angolan Old Kwanza\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022ARS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ar\u0022, \u0022name\u0022: \u0022Argentine Peso\u0022, \u0022hypernym\u0022: \u0022Argentina\u0022, \u0022bio\u0022: \u0022The Argentine peso (ARS) is the currency of Argentina. The peso symbol is $. The Argentine peso is subdivided into 100 centavos.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ARS\u0022}, {\u0022code\u0022: \u0022ATS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022at\u0022, \u0022name\u0022: \u0022Austrian Schilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Austrian schilling (ATS) was the currency of Austria. It was subdivided into 100 groschen. Its symbol was S or \u005Cu00f6S. The Austrian schilling was replaced by the euro in 1999.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ATS\u0022}, {\u0022code\u0022: \u0022AUD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022au\u0022, \u0022name\u0022: \u0022Australian Dollar\u0022, \u0022hypernym\u0022: \u0022aussie\u0022, \u0022bio\u0022: \u0022The Australian dollar (AUD) is the official currency of Australia and several independent countries and territories in the South Pacific. The Australian dollar is the fifth most traded currency in the world. AUD was established in 1966. It is also called the \u005Cu2018buck\u005Cu2019, \u005Cu2018dough\u005Cu2019 and \u005Cu2018aussie\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/aud/\u0022}, {\u0022code\u0022: \u0022AWG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022aw\u0022, \u0022name\u0022: \u0022Aruban Florin\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Aruban florin (AWG) is the currency of Aruba. It is subdivided into 100 cents. Its symbol is Afl. The Aruban florin is pegged to the US dollar at the rate of 1 USD \u003D 1.79 AWG.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/AWG\u0022}, {\u0022code\u0022: \u0022AZM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022az\u0022, \u0022name\u0022: \u0022Azerbaijan Old Manat\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022AZN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022az\u0022, \u0022name\u0022: \u0022Azerbaijan New Manat\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Azerbaijan manat (AZN) is the currency of Azerbaijan. The currency is subdivided into 100 q\u005Cu0259pik. The symbol of the Azerbaijan manat is \u005Cu20bc. There are similarities between the euro and manat banknotes as both were designed by a banknote designer, Robert Kalina.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/AZN\u0022}, {\u0022code\u0022: \u0022BAM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ba\u0022, \u0022name\u0022: \u0022Bosnian Mark\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bosnia and Herzegovina convertible mark (BAM) is the currency of Bosnia. It is subdivided into 100 fenings. The symbol of the Bosnia and Herzegovina convertible mark is KM. The currency is pegged to the euro at the rate of 1 EUR \u003D 1.95583 BAM.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BAM\u0022}, {\u0022code\u0022: \u0022BBD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bb\u0022, \u0022name\u0022: \u0022Barbados Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Barbadian dollar (BBD) is the currency of Barbados. It is subdivided into 100 cents. The symbol of the Barbadian dollar is $ or BBD$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BBD\u0022}, {\u0022code\u0022: \u0022BDT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bd\u0022, \u0022name\u0022: \u0022Bangladeshi Taka\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bangladeshi taka (BDT) is the currency of Bangladesh. It was subdivided into 100 poishas, although these coins are no longer used. The symbol of the Bangladeshi taka is \u005Cu09f3.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BDT\u0022}, {\u0022code\u0022: \u0022BEF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Belgian Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Belgian franc (BEF) was the currency of Belgium. It was subdivided into 100 centimes. Its symbol was fr. The Belgian franc was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BEF\u0022}, {\u0022code\u0022: \u0022BGL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022bg\u0022, \u0022name\u0022: \u0022Bulgarian Old Lev\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022BGN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bg\u0022, \u0022name\u0022: \u0022Bulgarian Lev\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bulgarian Lev (BGN) is the currency of Bulgaria. It is subdivided into 100 stotinki. The symbol of the Bulgarian Lev is \u005Cu043b\u005Cu0432. The currency\u005Cu2019s name \u005Cu2018lev\u005Cu2019 derives from the old Bulgarian and means \u005Cu2018lion\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BGN\u0022}, {\u0022code\u0022: \u0022BHD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bh\u0022, \u0022name\u0022: \u0022Bahraini Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bahraini dinar (BHD) is the currency of Bahrain. It is subdivided into 1,000 fils. Its symbol is BD. The Bahraini dinar is pegged to the US dollar at the rate of 1 USD \u003D 0.376 BD. As of 2021, it is the second\u002Dstrongest currency globally, after the Kuwaiti dinar.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BHD\u0022}, {\u0022code\u0022: \u0022BIF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bi\u0022, \u0022name\u0022: \u0022Burundi Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Burundi franc (BIF) is the currency of Burundi. It is divided into 100 centimes. The symbol used for the Burundi franc is FBu.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BIF\u0022}, {\u0022code\u0022: \u0022BMD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bm\u0022, \u0022name\u0022: \u0022Bermudian Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bermudian dollar (BMD) is the currency of Bermuda. It is subdivided into 100 cents. Its symbol is $ or BD$. The Bermudian dollar is pegged to the US dollar at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BMD\u0022}, {\u0022code\u0022: \u0022BND\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bn\u0022, \u0022name\u0022: \u0022Brunei Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Brunei dollar (BND) is the currency of Brunei. Its subunit is sen, one\u002Dhundredth of the dollar. The currency\u005Cu2019s symbol is $ or B$. The Brunei dollar is pegged to the Singapore dollar at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BND\u0022}, {\u0022code\u0022: \u0022BOB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bo\u0022, \u0022name\u0022: \u0022Bolivian Boliviano\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bolivian boliviano (BOB) is the official currency of Bolivia. The symbol used for the currency is Bs. The Bolivian boliviano is subdivided in 100 centavos.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BOB\u0022}, {\u0022code\u0022: \u0022BRL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022br\u0022, \u0022name\u0022: \u0022Brazilian Real\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Brazilian real (BRL) is the official currency of Brazil. It is divided into 100 centavos. The symbol of the Brazilian real is R$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/brl/\u0022}, {\u0022code\u0022: \u0022BSD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bs\u0022, \u0022name\u0022: \u0022Bahamian Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bahamian dollar (BSD) is the currency of The Bahamas. It is subdivided into 100 cents. Its symbol is $ or B$. The Bahamian dollar is pegged to the US dollar at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BSD\u0022}, {\u0022code\u0022: \u0022BTC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022btc\u0022, \u0022name\u0022: \u0022Bitcoin\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022BTN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bt\u0022, \u0022name\u0022: \u0022Bhutan Ngultrum\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Bhutanese ngultrum (BTN) is the currency of the Kingdom of Bhutan. It is subdivided into 100 chhertums. Its symbol is Nu. The Bhutanese ngultrum is pegged to the Indian rupee at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BTN\u0022}, {\u0022code\u0022: \u0022BWP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bw\u0022, \u0022name\u0022: \u0022Botswana Pula\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Botswana pula (BWP) is the official currency of Botswana. It is subdivided into 100 thebe. The symbol of the Botswana pula is P. As of 2021, the pula is rated as one of the strongest currencies in Africa.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BWP\u0022}, {\u0022code\u0022: \u0022BYN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022by\u0022, \u0022name\u0022: \u0022Belarusian Ruble\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Belarusian ruble (BYN) is the currency of Belarus. It is subdivided into 100 copecks. The symbol of the Belarusian ruble is Br. In 2016, the old Belarusian ruble (BYR) was replaced by the new Belarusian ruble (BYN).\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022BYR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022by\u0022, \u0022name\u0022: \u0022Belarusian Old Ruble\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BYR\u0022}, {\u0022code\u0022: \u0022BZD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022bz\u0022, \u0022name\u0022: \u0022Belize Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Belize dollar (BZD) is the official currency of Belize. Its symbol is $ or BZ$. The Belize dollar is subdivided into 100 cents. The currency is pegged to the US dollar at the rate of 1 USD \u003D 2 BZD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/BZD\u0022}, {\u0022code\u0022: \u0022CAD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ca\u0022, \u0022name\u0022: \u0022Canadian Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Canadian dollar (CAD) is the official currency of Canada. The Canadian dollar was introduced in 1858. CAD is known as a commodity currency. It is the sixth most traded currency in the world.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/cad/\u0022}, {\u0022code\u0022: \u0022CDF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cg\u0022, \u0022name\u0022: \u0022Congolese Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Congolese franc (CDF) is the official currency of the Democratic Republic of Congo. It is subdivided into 100 centimes. The symbol of the Congolese franc is FC.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CDF\u0022}, {\u0022code\u0022: \u0022CFP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022CFP Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022CHF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ch\u0022, \u0022name\u0022: \u0022Swiss Franc\u0022, \u0022hypernym\u0022: \u0022Switzerland\u0022, \u0022bio\u0022: \u0022The Swiss franc (CHF) is the official currency of Switzerland and Liechtenstein. The Swiss franc was introduced in 1850. CHF is known as a safe\u002Dhaven currency. The Swiss franc is the seventh most traded currency in the world.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/chf/\u0022}, {\u0022code\u0022: \u0022CLP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cl\u0022, \u0022name\u0022: \u0022Chilean Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Chilean peso (CLP) is the official currency of Chile. It is divided into 100 centavos, but there are no centavo coins in circulation. The symbol of the Chilean peso is $.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CLP\u0022}, {\u0022code\u0022: \u0022CNH\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cn\u0022, \u0022name\u0022: \u0022Chinese Yuan Renminbi (offshore)\u0022, \u0022hypernym\u0022: \u0022China\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CNH\u0022}, {\u0022code\u0022: \u0022CNY\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cn\u0022, \u0022name\u0022: \u0022Chinese Yuan Renminbi\u0022, \u0022hypernym\u0022: \u0022RMB, China, erica, michelle\u0022, \u0022bio\u0022: \u0022The Chinese yuan renminbi (CNY) is the official currency of the People\u0027s Republic of China. The Chinese yuan renminbi was introduced in 1948. CNY is known as one of the world\u005Cu2019s reserve currencies and is the eighth most traded currency globally.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/cny/\u0022}, {\u0022code\u0022: \u0022COP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022co\u0022, \u0022name\u0022: \u0022Colombian Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Colombian peso (COP) is the official currency of Colombia. The COP was introduced in 1837. The symbol of the Colombian peso is $ and COL$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/COP\u0022}, {\u0022code\u0022: \u0022CRC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cr\u0022, \u0022name\u0022: \u0022Costa Rican Colon\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Costa Rican colon (CRC) is the currency of Costa Rica. It is subdivided into 100 centimos. The symbol of the Costa Rican colon is \u005Cu20a1. The name of the currency derives from the explorer Christopher Columbus, Crist\u005Cu00f3bal Col\u005Cu00f3n in Spanish.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CRC\u0022}, {\u0022code\u0022: \u0022CSD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022rs\u0022, \u0022name\u0022: \u0022Serbian Old Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022CSK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Czechoslovak Koruna\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022CUC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cu\u0022, \u0022name\u0022: \u0022Cuban Convertible Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022CUP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cu\u0022, \u0022name\u0022: \u0022Cuban Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022CVE\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cv\u0022, \u0022name\u0022: \u0022Cape Verde Escudo\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Cape Verdean escudo (CVE) is the official currency of the Republic of Cape Verde. The $ symbol is typically used to separate decimals, for example, 20$00 indicates 20 escudos. The Cape Verdean escudo is pegged to the euro at the rate of 1 EUR \u003D 110.265 CVE.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CVE\u0022}, {\u0022code\u0022: \u0022CYP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Cypriot Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Cypriot pound (CYP) was the currency of Cyprus. It was replaced by the euro on 1st January 2008.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CYP\u0022}, {\u0022code\u0022: \u0022CZK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cz\u0022, \u0022name\u0022: \u0022Czech Koruna\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Czech koruna (CZK) is the currency of the Czech Republic. It is subdivided into 100  hal\u005Cu00e9\u005Cu0159\u005Cu016f. The symbol of the Czech koruna is K\u005Cu010d. The currency\u005Cu2019s name \u005Cu2018koruna\u005Cu2019 means \u005Cu2018crown\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/CZK\u0022}, {\u0022code\u0022: \u0022DEM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022de\u0022, \u0022name\u0022: \u0022German Mark\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The German mark (DEM) was the currency of Germany. It was subdivided into 100 pfennigs. Its symbol was DM. The German mark was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/DEM\u0022}, {\u0022code\u0022: \u0022DJF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022dj\u0022, \u0022name\u0022: \u0022Djibouti Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Djiboutian franc (DJF) is the official currency of Djibouti. It is subdivided into 100 centimes. The symbol used for the Djiboutian franc is Fdj. The currency is pegged to the US dollar at the rate of 1 USD \u003D 177.721 DJF.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/DJF\u0022}, {\u0022code\u0022: \u0022DKK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022dk\u0022, \u0022name\u0022: \u0022Danish Krone\u0022, \u0022hypernym\u0022: \u0022Denmark\u0022, \u0022bio\u0022: \u0022The Danish krone (DKK) is the official currency of Denmark, Greenland and the Faroe Islands. The Danish krone is subdivided into 100 \u005Cu00f8re. The symbol of the krone is kr. The currency is also known as the Danish crown. The krone is currently pegged to the euro.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/DKK\u0022}, {\u0022code\u0022: \u0022DOP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022do\u0022, \u0022name\u0022: \u0022Dominican Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Dominican peso (DOP) is the official currency of the Dominican Republic. The symbol of the Dominican peso is $ and RD$. The peso is subdivided into 100 centavos.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/DOP\u0022}, {\u0022code\u0022: \u0022DZD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022dz\u0022, \u0022name\u0022: \u0022Algerian Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Algerian dinar (DZD) is the official currency of Algeria. It is subdivided into 100 centimes. The symbol for the Algerian dinar is DA.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/DZD\u0022}, {\u0022code\u0022: \u0022ECS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ec\u0022, \u0022name\u0022: \u0022Ecuador Sucre\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Ecuadorian sucre (ECS) was the official currency of Ecuador until 2000. Its symbol was S/. The Ecuadorian sucre was replaced by the US dollar.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ECS\u0022}, {\u0022code\u0022: \u0022EEK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ee\u0022, \u0022name\u0022: \u0022Estonian Kroon\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Estonian kroon (EEK) was the currency of Estonia. The symbol of the currency was kr. The Estonian kroon was replaced by the euro on 15th January.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/EEK\u0022}, {\u0022code\u0022: \u0022EGP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022eg\u0022, \u0022name\u0022: \u0022Egyptian Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Egyptian pound (EGP) is the official currency of Egypt. The symbol of the currency is E\u005Cu00a3. The Egyptian pound is subdivided into 100 piastres or 1,000 milliemes.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/EGP\u0022}, {\u0022code\u0022: \u0022ERN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022er\u0022, \u0022name\u0022: \u0022Eritrean Nakfa\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022ESP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Spanish Peseta\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Spanish peseta (ESP) was the currency of Spain. It was subdivided into 100 c\u005Cu00e9ntimos. Its symbol was \u005Cu20a7. The Spanish peseta was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ESP\u0022}, {\u0022code\u0022: \u0022ETB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022et\u0022, \u0022name\u0022: \u0022Ethiopian Birr\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Ethiopian birr (ETB) is the official currency of Ethiopia. It is subdivided into 100 santims. The symbol of the Ethiopian birr is Br. The word \u005Cu2018birr\u005Cu2019 derives from the local language and means \u005Cu2018silver\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ETB\u0022}, {\u0022code\u0022: \u0022ETH\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022eth\u0022, \u0022name\u0022: \u0022Ethereum\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022EUR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022eu\u0022, \u0022name\u0022: \u0022Euro\u0022, \u0022hypernym\u0022: \u0022france, spain, portugal, germany, austria, netherlands, luxembourg, belgium, cyprus, estonia, finland, greece, ireland, latvia, lithuania, malta, slovakia, slovenia, italy\u0022, \u0022bio\u0022: \u0022The euro (EUR) is the official currency of 19 of the 27 member states of the European Union. As of the first quarter of 2021, the European Union, also known as the eurozone, consists of 27 member countries. The following countries have adopted the euro: Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/eur/\u0022}, {\u0022code\u0022: \u0022FIM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Finnish Markka\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Finnish markka (FIM) was the currency of Finland. It was subdivided into 100 pennies. Its symbol was Mk. The Finnish markka was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/FIM\u0022}, {\u0022code\u0022: \u0022FJD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022fj\u0022, \u0022name\u0022: \u0022Fiji Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Fijian dollar (FJD) is the official currency of Fiji. It is subdivided into 100 cents. The symbol of the Fijian dollar is $ or FJ$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/FJD\u0022}, {\u0022code\u0022: \u0022FKP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022fk\u0022, \u0022name\u0022: \u0022Falkland Islands Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Falkland Islands pound (FKP) is the official currency of the Falkland Islands, which are located in the South Atlantic Ocean and belong to the British Overseas Territory. The symbol of the Falkland Islands pound is \u005Cu00a3 or FK\u005Cu00a3. The currency is pegged to the British pound at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/FKP\u0022}, {\u0022code\u0022: \u0022FRF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022French Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The French franc (FRF) was the currency of France. It was subdivided into 100 centimes. Its symbol was F or Fr. In the 19th and 20th centuries, the French franc was one of the world\u005Cu2019s reserve currencies. The franc was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/FRF\u0022}, {\u0022code\u0022: \u0022GBP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gb\u0022, \u0022name\u0022: \u0022Great British Pound\u0022, \u0022hypernym\u0022: \u0022uk, england, scotland, wales, northern ireland, united kingdom, ashley, neil, dave, tim\u0022, \u0022bio\u0022: \u0022The pound sterling, or GBP, is the official currency of the United Kingdom. The pound sterling is the oldest currency in continuous use and is the fourth most traded currency in the foreign exchange market, after the US dollar, euro and Japanese yen.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/gbp/\u0022}, {\u0022code\u0022: \u0022GEL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ge\u0022, \u0022name\u0022: \u0022Georgian Lari\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Georgian lari (GEL) is the currency of Georgia. It is subdivided into 100 tetri. The symbol of the Georgian lari is \u005Cu20be.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GEL\u0022}, {\u0022code\u0022: \u0022GHC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Ghanian Old Cedi\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022GHS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gh\u0022, \u0022name\u0022: \u0022Ghanaian New Cedi\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Ghanaian cedi (GHS) is the official currency of Ghana. It is divided into 100 pesewas. The symbol of the Ghanaian cedi is GH\u005Cu20b5.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GHS\u0022}, {\u0022code\u0022: \u0022GIP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gi\u0022, \u0022name\u0022: \u0022Gibraltar Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Gibraltar pound (GIP) is the currency of Gibraltar. It is subdivided into 100 pennies. Its symbol is \u005Cu00a3. The Gibraltar pound is pegged to the British pound at par.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GIP\u0022}, {\u0022code\u0022: \u0022GMD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gm\u0022, \u0022name\u0022: \u0022Gambian Dalasi\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Gambian dalasi (GMD) is the official currency of Gambia. It is subdivided into 100 bututs. The currency\u005Cu2019s name comes from the word \u005Cu2018dala\u005Cu2019, a nickname for a 5\u002DFrench\u002DWest\u002DAfrican\u002Dfranc note.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GMD\u0022}, {\u0022code\u0022: \u0022GNF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gn\u0022, \u0022name\u0022: \u0022Guinea Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Guinean franc (GNF) is the official currency of Guinea. It is subdivided into 100 centimes but none of them was ever issued.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GNF\u0022}, {\u0022code\u0022: \u0022GRD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Greek Drachma\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Greek drachma (GRD) was the currency of Greece. It was subdivided into 100 lepta. The symbol of the Greek drachma was \u005Cu20af. The currency was replaced by the euro on 1st January 2001.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GRD\u0022}, {\u0022code\u0022: \u0022GTQ\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gt\u0022, \u0022name\u0022: \u0022Guatemalan Quetzal\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Guatemalan quetzal (GTQ) is the official currency of Guatemala. It is subdivided into 100 centavos. The symbol of the Guatemalan quetzal is Q.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GTQ\u0022}, {\u0022code\u0022: \u0022GYD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022gy\u0022, \u0022name\u0022: \u0022Guyanese Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Guyanese dollar (GYD) is the official currency of Guyana. It is subdivided into 100 cents. The symbol of the Guyanese dollar is $ and G$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/GYD\u0022}, {\u0022code\u0022: \u0022HKD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022hk\u0022, \u0022name\u0022: \u0022Hong Kong Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Hong Kong dollar (HKD) is the official currency of Hong Kong. The Hong Kong dollar was introduced in 1863. HKD is the ninth most traded currency in the world. It is pegged to the US dollar.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/hkd/\u0022}, {\u0022code\u0022: \u0022HNL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022hn\u0022, \u0022name\u0022: \u0022Honduran Lempira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Honduran lempira (HNL) is the official currency of Honduras. It is subdivided into 100 centavos. The symbol of the Honduran lempira is L.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/HNL\u0022}, {\u0022code\u0022: \u0022HRK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022hr\u0022, \u0022name\u0022: \u0022Croatian Kuna\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Croatian kuna (HRK) is the official currency of Croatia. It is subdivided into 100 lipa. The symbol of the Croatian kuna is kn.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/HRK\u0022}, {\u0022code\u0022: \u0022HTG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ht\u0022, \u0022name\u0022: \u0022Haitian Gourde\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Haitian gourde (HTG) is the official currency of Haiti. It is subdivided into 100 centimes. The symbol of the Haitian gourde is G.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/HTG\u0022}, {\u0022code\u0022: \u0022HUF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022hu\u0022, \u0022name\u0022: \u0022Hungarian Forint\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Hungarian forint (HUF) is the currency of Hungary. It was subdivided into 100 fill\u005Cu00e9r. Coins of the currency\u005Cu2019s subunit are no longer in use due to high inflation. The symbol of the Hungarian forint is Ft.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/HUF\u0022}, {\u0022code\u0022: \u0022IDR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022id\u0022, \u0022name\u0022: \u0022Indonesian Rupiah\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Indonesian rupiah (IDR) is the official currency of Indonesia. It is subdivided into 100 sen, although these coins are no longer used due to high inflation. The symbol of the Indonesian rupiah is Rp.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/IDR\u0022}, {\u0022code\u0022: \u0022IEP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Irish Punt\u0022, \u0022hypernym\u0022: \u0022Ireland\u0022, \u0022bio\u0022: \u0022The Irish pound (IEP) was the currency of Ireland. It was subdivided into 100 pennies. Its symbol was \u005Cu00a3 or IR\u005Cu00a3. The Irish pound was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/IEP\u0022}, {\u0022code\u0022: \u0022ILS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022il\u0022, \u0022name\u0022: \u0022Israeli New Shekel\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Israeli new shekel (ILS) is the currency of Israel and the Palestinian territories of the West Bank and the Gaza Strip. It is also known as the Israeli shekel and is subdivided into 100 agorot. The symbol of the currency is \u005Cu20aa. The new shekel was introduced in 1986, replacing the old shekel at the rate of 1,000:1.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ILS\u0022}, {\u0022code\u0022: \u0022INR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022in\u0022, \u0022name\u0022: \u0022Indian Rupee\u0022, \u0022hypernym\u0022: \u0022Bhumii\u0022, \u0022bio\u0022: \u0022The Indian rupee (INR) is the official currency of the Republic of India and is issued by the Reserve Bank of India. The rupee is subdivided into 100 paise. The symbol of the Indian rupee is \u005Cu20b9.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/inr/\u0022}, {\u0022code\u0022: \u0022IQD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022iq\u0022, \u0022name\u0022: \u0022Iraqi Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Iraqi dinar (IQD) is issued by the Central Bank of Iraq. It is subdivided into 1,000 fils. Due to inflation, they are no longer in use. The Iraqi dinar is pegged to the US dollar.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/IQD\u0022}, {\u0022code\u0022: \u0022IRR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ir\u0022, \u0022name\u0022: \u0022Iranian Rial\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Iranian rial (IRR) is the currency of Iran. Its symbol is \u005Cufdfc. As of 2021, the Iranian rial is the world\u005Cu2019s second weakest currency in circulation.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/IRR\u0022}, {\u0022code\u0022: \u0022ISK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022is\u0022, \u0022name\u0022: \u0022Iceland Krona\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Icelandic krona or kr\u005Cu00f3na (ISK) is the official currency of Iceland. Its subunit is eyrir, one\u002Dhundredth of the krona. The symbol of the Icelandic krona is kr.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ISK\u0022}, {\u0022code\u0022: \u0022ITL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Italian Lira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Italian lira (ITL) was the currency of Italy. It was subdivided into 100 centesimi. Its symbol was L. The Italian lira was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ITL\u0022}, {\u0022code\u0022: \u0022JMD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022jm\u0022, \u0022name\u0022: \u0022Jamaican Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Jamaican dollar (JMD) is the official currency of Jamaica. It is subdivided into 100 cents. The symbol of the Jamaican dollar J$ or JA$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/JMD\u0022}, {\u0022code\u0022: \u0022JOD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022jo\u0022, \u0022name\u0022: \u0022Jordanian Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Jordanian dinar (JOD) is the official currency of Jordan. The dinar is subdivided into 10 dirhams, 100 qirshes and 1,000 fils. The symbol of the Jordanian dinar is JD. It is pegged to the US dollar at the rate of 1 USD \u003D 0.709 JOD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/JOD\u0022}, {\u0022code\u0022: \u0022JPY\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022jp\u0022, \u0022name\u0022: \u0022Japanese Yen\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Japanese yen (JPY) is the official currency of Japan. It is the third most traded currency in the world. The Japanese yen was introduced in 1871. It is also used as the fourth reserve currency, after the United States dollar, euro and British pound in the world.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/jpy/\u0022}, {\u0022code\u0022: \u0022KES\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ke\u0022, \u0022name\u0022: \u0022Kenyan Shilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Kenyan shilling (KES) is the official currency of Kenya. It is subdivided into 100 cents. The symbol of the Kenyan shilling is KSh\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KES\u0022}, {\u0022code\u0022: \u0022KGS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kg\u0022, \u0022name\u0022: \u0022Kyrgyzstanian Som\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Kyrgyzstani som (KGS) is the currency of Kyrgyzstan. It is subdivided into 100 tyiyns.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KGS\u0022}, {\u0022code\u0022: \u0022KHR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kh\u0022, \u0022name\u0022: \u0022Cambodian Riel\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Cambodian riel (KHR) is the official currency of Cambodia. Its subunits are kak, one\u002Dtenth of the riel, and sen, one\u002Dhundredth of the riel. The symbol of the Cambodian riel is \u005Cu17db.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KHR\u0022}, {\u0022code\u0022: \u0022KMF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022km\u0022, \u0022name\u0022: \u0022Comoros Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Comorian franc (KMF) is the official currency of Comoros. It is subdivided into 100 centimes. The symbol of the Comorian franc is CF. The currency is pegged to the euro at the rate of 1 EUR \u003D 491.96775 KMF.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KMF\u0022}, {\u0022code\u0022: \u0022KPW\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kp\u0022, \u0022name\u0022: \u0022North Korean Won\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The North Korean won (KPW) is the official currency of North Korea. It is subdivided into 100 chon. The symbol of the currency is \u005Cu20a9. The North Korean won is strictly controlled by the country\u005Cu2019s government and can\u005Cu2019t be converted into other currencies. Foreign visitors of the country get a special convertible won to use.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KPW\u0022}, {\u0022code\u0022: \u0022KRW\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kr\u0022, \u0022name\u0022: \u0022Korean Won\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The South Korean won (KRW) is the official currency of South Korea. It is subdivided into 100 jeon. The symbol of the South Korean won is \u005Cu20a9.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KRW\u0022}, {\u0022code\u0022: \u0022KWD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kw\u0022, \u0022name\u0022: \u0022Kuwaiti Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Kuwaiti dinar (KWD) is the official currency of Kuwait. It is subdivided into 1,000 fils. As of 2021, the Kuwaiti dinar is the world\u005Cu2019s strongest currency.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KWD\u0022}, {\u0022code\u0022: \u0022KYD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ky\u0022, \u0022name\u0022: \u0022Cayman Islands Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Cayman Islands dollar (KYD) is the currency of the Cayman Islands. It is subdivided into 100 cents. Its symbol is $ or CI$. The Cayman Islands dollar is pegged to the US dollar at the rate of 1 KYD \u003D 1.20 USD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KYD\u0022}, {\u0022code\u0022: \u0022KZT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022kz\u0022, \u0022name\u0022: \u0022Kazakhstan Tenge\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Kazakhstani tenge (KZT) is the currency of Kazakhstan. It is subdivided into 100 tiyn. The symbol of the Kazakhstani tenge is \u005Cu20b8. The currency was adopted in 1993 and replaced the Russian ruble.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/KZT\u0022}, {\u0022code\u0022: \u0022LAK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022la\u0022, \u0022name\u0022: \u0022Lao Kip\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Lao kip (LAK) is the currency of Laos. It is subdivided into 100 att. The symbol of the Lao kip is \u005Cu20ad.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LAK\u0022}, {\u0022code\u0022: \u0022LBP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022lb\u0022, \u0022name\u0022: \u0022Lebanese Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Lebanese pound (LBP) is the official currency of Lebanon. It was subdivided into 100 piasters but they are no longer in use due to high inflation. The currency\u005Cu2019s symbol is \u005Cu0644.\u005Cu0644. The Lebanese pound is pegged to the US dollar at the rate of 1 USD \u003D 1,507.5 LBP.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LBP\u0022}, {\u0022code\u0022: \u0022LKR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022lk\u0022, \u0022name\u0022: \u0022Sri Lanka Rupee\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Sri Lankan rupee (LKR) is the currency of Sri Lanka. It is subdivided into 100 cents. The symbol of the Sri Lankan rupee is Rs.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LKR\u0022}, {\u0022code\u0022: \u0022LRD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022lr\u0022, \u0022name\u0022: \u0022Liberian Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Liberian dollar (LRD) is the official currency of the Republic of Liberia. It is subdivided into 100 cents. The symbol of the currency is L$. The Liberian dollar is used along with the US dollar due to the common history between these two countries.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LRD\u0022}, {\u0022code\u0022: \u0022LSL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ls\u0022, \u0022name\u0022: \u0022Lesotho Loti\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Lesotho loti (LSL) is the official currency of the Kingdom of Lesotho. It is subdivided into 100 lisente. The Lesotho loti is pegged to the South African rand at par and both currencies are accepted as legal tender in the country.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LSL\u0022}, {\u0022code\u0022: \u0022LTC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ltc\u0022, \u0022name\u0022: \u0022Litecoin\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022LTL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022lt\u0022, \u0022name\u0022: \u0022Lithuanian Litas\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Lithuanian litas (LTL) was the currency of Lithuania. The Lithuanian litas was divided into 100 cent\u005Cu0173. The currency\u005Cu2019s symbol was Lt. On 1st January 2015, it was replaced by the euro.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LTL\u0022}, {\u0022code\u0022: \u0022LUF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022lu\u0022, \u0022name\u0022: \u0022Luxembourg Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Luxembourg franc (LUF) was the currency of Luxembourg. It was subdivided into 100 centimes. Its symbol was F. The Luxembourg franc was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LUF\u0022}, {\u0022code\u0022: \u0022LVL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022lv\u0022, \u0022name\u0022: \u0022Latvian Lats\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Latvian lats (LVL) was the currency of Latvia. It was subdivided into 100 sant\u005Cu012bmi. The symbol of the Latvian lats was Ls. The currency was replaced by the euro in January 2014.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LVL\u0022}, {\u0022code\u0022: \u0022LYD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ly\u0022, \u0022name\u0022: \u0022Libyan Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Libyan dinar (LYD) is the official currency of Libya. It is subdivided into 1,000 dirhams. The symbol of the Libyan dinar is LD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/LYD\u0022}, {\u0022code\u0022: \u0022MAD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ma\u0022, \u0022name\u0022: \u0022Moroccan Dirham\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Moroccan dirham (MAD) is the currency of Morocco. It is issued by the Central Bank of Morocco, the Bank Al\u002DMaghrib. The Moroccan dirham is subdivided into 100 centimes. The symbol of the currency is DH.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MAD\u0022}, {\u0022code\u0022: \u0022MDL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022md\u0022, \u0022name\u0022: \u0022Moldovan Leu\u0022, \u0022hypernym\u0022: \u0022Dani\u0022, \u0022bio\u0022: \u0022The Moldovan leu (MDL) is the official currency of Moldova. The leu is subdivided into 100 bani. The symbol of the Moldovan leu is L. The name \u005Cu2018leu\u005Cu2019 derives from Romanian and means \u005Cu2018lion\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MDL\u0022}, {\u0022code\u0022: \u0022MGA\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mg\u0022, \u0022name\u0022: \u0022Malagasy Ariary\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Malagasy ariary (MGA) is the official currency of Madagascar. It is subdivided into 5 iraimbilanja. The currency is one of only two circulating currencies, along with Mauritanian ouguiya, globally whose subunit is not based on a power of ten. The symbol of the Malagasy ariary is Ar.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MGA\u0022}, {\u0022code\u0022: \u0022MGF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Malagasy Old Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022MKD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mk\u0022, \u0022name\u0022: \u0022Macedonian Denar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Macedonian denar (MKD) is the official currency of North Macedonia. It is subdivided into 100 denars. The symbol of the Macedonian denar is \u005Cu0434\u005Cu0435\u005Cu043d.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MKD\u0022}, {\u0022code\u0022: \u0022MMK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mm\u0022, \u0022name\u0022: \u0022Myanmar Kyat\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Myanmar kyat (MMK) is the official currency of Myanmar, formerly known as Burma. It is subdivided into 100 pyas. The symbol of the Myanmar kyat is K.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MMK\u0022}, {\u0022code\u0022: \u0022MNT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mn\u0022, \u0022name\u0022: \u0022Mongolian Tugrik\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Mongolian tugrik or t\u005Cu00f6gr\u005Cu00f6g (MNT) is the official currency of Mongolia. Its symbol is \u005Cu20ae.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MNT\u0022}, {\u0022code\u0022: \u0022MOP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mo\u0022, \u0022name\u0022: \u0022Macau Pataca\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Macanese pataca (MOP) is the currency of Macau. It is subdivided into 10 ho and 100 sin. The symbol of the Macanese pataca is MOP$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MOP\u0022}, {\u0022code\u0022: \u0022MRO\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022mr\u0022, \u0022name\u0022: \u0022Mauritanian Old Ouguiya\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MRO\u0022}, {\u0022code\u0022: \u0022MRU\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mr\u0022, \u0022name\u0022: \u0022Mauritania Ouguiya\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Mauritanian ouguiya (MRU) is the official currency of Mauritania. It is subdivided into 5 khoums. The currency is one of only two circulating currencies, along with Malagasy ariary, globally whose subunit is not based on a power of ten. The symbol of the Mauritanian ouguiya is UM.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022MTL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Maltese Lira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Maltese lira (MTL) was the official currency of Malta. The symbol of the currency was Lm and \u005Cu20a4M. The Maltese lira was replaced by the euro in 2007.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MTL\u0022}, {\u0022code\u0022: \u0022MUR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mu\u0022, \u0022name\u0022: \u0022Mauritius Rupee\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Mauritius rupee (MUR) is the official currency of Mauritius. It is subdivided into 100 cents. The symbol of the Mauritius rupee is Rs.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MUR\u0022}, {\u0022code\u0022: \u0022MVR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mv\u0022, \u0022name\u0022: \u0022Maldive Rufiyaa\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Maldivian rufiyaa (MVR) is the official currency of the Maldives. It is subdivided into 100 laari. The symbol of the Maldivian rufiyaa is Rf.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MVR\u0022}, {\u0022code\u0022: \u0022MWK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mw\u0022, \u0022name\u0022: \u0022Malawi Kwacha\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Malawian kwacha (MWK) is the official currency of Malawi. Its subunit is tambala, one\u002Dhundredth of the kwacha. The symbol of the Malawian kwacha is K.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MWK\u0022}, {\u0022code\u0022: \u0022MXN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mx\u0022, \u0022name\u0022: \u0022Mexican Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Mexican peso (MXN) is the official currency of Mexico. It is subdivided into 100 centavos. The currency was initially based on Spain\u005Cu2019s official currency, called \u005Cu2018real\u005Cu2019, which was the Spanish dollar. The Mexican peso\u005Cu2019s name originated from the silver 8\u002Dreal coins issued by Spain in Mexico.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/mxn/\u0022}, {\u0022code\u0022: \u0022MXP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Mexican Old Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022MYR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022my\u0022, \u0022name\u0022: \u0022Malaysian Ringgit\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Malaysian ringgit (MYR), unofficially called the Malaysian dollar, is the official currency of Malaysia. The Malaysian ringgit is divided into 100 sen.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/myr/\u0022}, {\u0022code\u0022: \u0022MZM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022mz\u0022, \u0022name\u0022: \u0022Mozambique Old Metical\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022MZN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022mz\u0022, \u0022name\u0022: \u0022Mozambique New Metical\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Mozambican metical (MZN) is the official currency of Mozambique. It is subdivided into 100 centavos. Currencies such as the US dollar, British pound, euro and South African rand are also used in the country.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/MZN\u0022}, {\u0022code\u0022: \u0022NAD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022na\u0022, \u0022name\u0022: \u0022Namibia Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Namibian dollar (NAD) is the official currency of Namibia. It is subdivided into 100 cents. The symbol of the Namibian dollar is $ or N$. The Namibian dollar is pegged to the South African rand at par, which is also legal tender in the country.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NAD\u0022}, {\u0022code\u0022: \u0022NGN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ng\u0022, \u0022name\u0022: \u0022Nigerian Naira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Nigerian naira (NGN) is the official currency of Nigeria. It is subdivided into 100 kobos. The Central Bank of Nigeria is the only bank with the authority to issue the legal currency. The symbol of the Nigerian naira is \u005Cu20a6.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NGN\u0022}, {\u0022code\u0022: \u0022NIO\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ni\u0022, \u0022name\u0022: \u0022Nicaraguan Cordoba Oro\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Nicaraguan cordoba (NIO) is the official currency of Nicaragua. It is subdivided into 100 centavos. The symbol of the Nicaraguan cordoba is C$. The currency has been named after Francisco Hern\u005Cu00e1ndez de C\u005Cu00f3rdoba, the founder of Nicaragua.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NIO\u0022}, {\u0022code\u0022: \u0022NLG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Dutch Guilder\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Dutch guilder (NLG) was the currency of the Netherlands. It was subdivided into 100 cents. Its symbol was \u005Cu0192. The Dutch guilder was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NLG\u0022}, {\u0022code\u0022: \u0022NOK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022no\u0022, \u0022name\u0022: \u0022Norwegian Kroner\u0022, \u0022hypernym\u0022: \u0022Norway\u0022, \u0022bio\u0022: \u0022The Norwegian krone (NOK) is the official currency of Norway. It is subdivided into 100 \u005Cu00f8re. The symbol of the Norwegian krone is kr. In English, the word \u005Cu2018krone\u005Cu2019 translates to \u005Cu2018crown\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NOK\u0022}, {\u0022code\u0022: \u0022NPR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022np\u0022, \u0022name\u0022: \u0022Nepalese Rupee\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Nepalese rupee (NPR) is the official currency of Nepal. It is subdivided into 100 paisa. The symbol of the Nepalese rupee is \u005Cu0930\u005Cu0941. The currnecy is pegged to the Indian rupee at the rate of 1 INR \u003D 1.60 NPR.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NPR\u0022}, {\u0022code\u0022: \u0022NZD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022nz\u0022, \u0022name\u0022: \u0022New Zealand Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The New Zealand dollar (NZD) is the official currency of New Zealand and the Cook Islands, Niue, the Ross Dependency, Tokelau, and the Pitcairn Islands. The New Zealand dollar is informally called the \u005Cu2018kiwi\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/NZD\u0022}, {\u0022code\u0022: \u0022OMR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022om\u0022, \u0022name\u0022: \u0022Omani Rial\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Omani rial (OMR) is the official currency of Oman. It is subdivided into 1,000 baisa. Its symbol is \u005Cu0631.\u005Cu0639. The Omani rial is pegged to the US dollar at the rate of 1 USD \u003D 0.384497 OMR.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/OMR\u0022}, {\u0022code\u0022: \u0022PAB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pa\u0022, \u0022name\u0022: \u0022Panamanian Balboa\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Panamanian balboa (PAB) is the official currency of Panama. It is subdivided into 100 cent\u005Cu00e9simos and its symbol is B/. The currency has been named after Vasco N\u005Cu00fa\u005Cu00f1ez de Balboa, a Spanish explorer and conquistador. The Panamanian balboa is pegged to the US dollar at par, which is also used in the country.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PAB\u0022}, {\u0022code\u0022: \u0022PEN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pe\u0022, \u0022name\u0022: \u0022Peruvian Nuevo Sol\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Peruvian sol (PEN) is the currency of Peru. It is subdivided into 100 c\u005Cu00e9ntimos. The symbol of the Peruvian sol is S/.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PEN\u0022}, {\u0022code\u0022: \u0022PGK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pg\u0022, \u0022name\u0022: \u0022Papua New Guinea Kina\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Papua New Guinean kina (PGK) is the official currency of Papua New Guinea. It is subdivided into 100 toea. The Papua New Guinean kina was issued in 1975 and replaced the Australian dollar. The name \u005Cu2018kina\u005Cu2019 refers to a pearl shell widely used for local trading.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PGK\u0022}, {\u0022code\u0022: \u0022PHP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ph\u0022, \u0022name\u0022: \u0022Philippine Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Philippine peso (PHP), or \u005Cu2018piso\u005Cu2019 in Filipino, is the official currency of the Philippines. It\u0027s subdivided into 100 centavos, or \u005Cu2018sentimos\u005Cu2019 in Filipino. The symbol of the Philippine peso is \u005Cu20b1.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/php/\u0022}, {\u0022code\u0022: \u0022PKR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pk\u0022, \u0022name\u0022: \u0022Pakistan Rupee\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Pakistani rupee (PKR) is the official currency of Pakistan. It is subdivided into 100 paise. The symbol of the Pakistani rupee is Rs.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PKR\u0022}, {\u0022code\u0022: \u0022PLN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pl\u0022, \u0022name\u0022: \u0022Polish Zloty\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Polish zloty (PLN) is the currency of Poland. Its subunit is grosz, one\u002Dhundredth of the zloty. The symbol of the Polish zloty is z\u005Cu0142. The currency\u005Cu2019s name \u005Cu2018zloty\u005Cu2019 means \u005Cu2018golden\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022PLZ\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Polish Old Zloty\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022PTE\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Portuguese Escudo\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Portuguese escudo (PTE) was the currency of Portugal. It was subdivided into 100 centavos. The Portuguese escudo was replaced by the euro in 2002.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PTE\u0022}, {\u0022code\u0022: \u0022PYG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022py\u0022, \u0022name\u0022: \u0022Paraguay Guarani\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Paraguayan guarani (PYG) is the official currency of Paraguay. It was subdivided into 100 c\u005Cu00e9ntimos, but they are no longer in use due to their very low value. The symbol of the Paraguayan guarani is \u005Cu20b2.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/PYG\u0022}, {\u0022code\u0022: \u0022QAR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022qa\u0022, \u0022name\u0022: \u0022Qatari Rial\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Qatari riyal (QAR) is the currency of Qatar. It is subdivided into 100 dirhams. Its symbol is \u005Cu0631.\u005Cu0642. The Qatari riyal is pegged to the US dollar at the rate of 1 USD \u003D 3.64 QAR.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/QAR\u0022}, {\u0022code\u0022: \u0022ROL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ro\u0022, \u0022name\u0022: \u0022Romanian Old Leu\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022RON\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ro\u0022, \u0022name\u0022: \u0022Romanian New Leu\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Romanian leu (RON) is the currency of Romania. It is subdivided into 100 bani. The symbol of the currency is L. The currency\u005Cu2019s name \u005Cu2018leu\u005Cu2019 means \u005Cu2018lion\u005Cu2019.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/RON\u0022}, {\u0022code\u0022: \u0022RSD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022rs\u0022, \u0022name\u0022: \u0022Serbian Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Serbian dinar (RSD) is the currency used in Serbia. It is subdivided into 100 paras. The symbol of the Serbian dinar is \u005Cu0420\u005Cu0421\u005Cu0414.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/RSD\u0022}, {\u0022code\u0022: \u0022RUB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ru\u0022, \u0022name\u0022: \u0022Russian Rouble\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Russian ruble (RUB) is the official currency of the Russian Federation, as well as South Ossetia, Abkhazia, Donetsk and Luhansk. The ruble is subdivided into 100 kopeks. The symbol of the Russian ruble is \u005Cu20bd.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/RUB\u0022}, {\u0022code\u0022: \u0022RWF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022rw\u0022, \u0022name\u0022: \u0022Rwandan Franc\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Rwandan franc (RWF) is the currency of Rwanda. The franc is subdivided into 100 centimes.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/RWF\u0022}, {\u0022code\u0022: \u0022SAR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sa\u0022, \u0022name\u0022: \u0022Saudi Riyal\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Saudi riyal (SAR) has been the official currency of Saudi Arabia since the country was first established. The Saudi riyal is currently pegged to the US dollar at the rate of 1 US dollar \u003D 3.75 SR.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/sar/\u0022}, {\u0022code\u0022: \u0022SBD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sb\u0022, \u0022name\u0022: \u0022Solomon Islands Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Solomon Islands dollar (SBD) is the official currency of the Solomon Islands. It is subdivided into 100 cents. The symbol of the Solomon Islands dollar is $ or SI$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SBD\u0022}, {\u0022code\u0022: \u0022SCR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sc\u0022, \u0022name\u0022: \u0022Seychelles Rupee\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Seychelles rupee (SCR) is the official currency of Seychelles. It is subdivided into 100 cents. The symbol of the Seychelles rupee is Rs. Taking into account the country\u005Cu2019s population, Seychelles is the smallest country globally with an independent monetary policy.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SCR\u0022}, {\u0022code\u0022: \u0022SDD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022sd\u0022, \u0022name\u0022: \u0022Sudanese Old Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022SDG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sd\u0022, \u0022name\u0022: \u0022Sudanese Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Sudanese pound (SDG) is the currency of the Republic of Sudan and is issued by the Central Bank of Sudan. It is subdivided into 100 piastres. The symbol of the Sudanese pound is \u005Cu00a3SD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SDG\u0022}, {\u0022code\u0022: \u0022SDP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022sd\u0022, \u0022name\u0022: \u0022Sudanese Old Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022SEK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022se\u0022, \u0022name\u0022: \u0022Swedish Krona\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Swedish krona (SEK) has been the currency of Sweden since 1873. It is issued by the Swedish central bank, Sveriges Riksbank. The symbol of the currency is kr. One Krona is subdivided into 100 \u005Cu00f6re. In English, the currency is sometimes referred to as the Swedish crown (\u005Cu2018krona\u005Cu2019 means \u005Cu2018crown\u005Cu2019 in Swedish).\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/sek/\u0022}, {\u0022code\u0022: \u0022SGD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sg\u0022, \u0022name\u0022: \u0022Singapore Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Singapore dollar (SGD) is the currency of the island state of Singapore. The symbol of the currency is S$. It is divided into 100 cents. The currency is issued and monitored by the Monetary Authority of Singapore.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/sgd/\u0022}, {\u0022code\u0022: \u0022SHP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sh\u0022, \u0022name\u0022: \u0022St. Helena Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Saint Helena pound (SHP) is the official currency of Saint Helena and Ascension, two islands in the Atlantic Ocean that are members of the British Overseas Territory of Saint Helena, Ascension, and Tristan da Cunha. The Saint Helena pound is pegged to the British pound at par and both currencies are used on the island.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SHP\u0022}, {\u0022code\u0022: \u0022SIT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022si\u0022, \u0022name\u0022: \u0022Slovenian Tolar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Slovenian tolar (SIT) was the currency of Slovenia. It was subdivided into 100 stotinov. The currency was replaced by the euro on 1st January 2007.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SIT\u0022}, {\u0022code\u0022: \u0022SKK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Slovak Koruna\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Slovak koruna (SKK) was the currency of Slovakia. It was subdivided into 100 haliers. Its symbol was Sk. The currency\u005Cu2019s name \u005Cu2018koruna\u005Cu2019 means \u005Cu2018crown\u005Cu2019. The Slovak koruna was replaced by the euro in January 2009.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SKK\u0022}, {\u0022code\u0022: \u0022SLL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sl\u0022, \u0022name\u0022: \u0022Sierra Leone Leone\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Sierra Leonean leone (SLL) is the official currency of Sierra Leone. The leone is subdivided into 100 cents. The currency\u005Cu2019s symbol is Le. The Sierra Leonean leone is one of the weakest currencies globally.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SLL\u0022}, {\u0022code\u0022: \u0022SOS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022so\u0022, \u0022name\u0022: \u0022Somali Shilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Somalia shilling (SOS) is the official currency of Somalia. It is subdivided into 100 senti. The symbol of the Somalia shilling is Sh.So.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SOS\u0022}, {\u0022code\u0022: \u0022SRD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sr\u0022, \u0022name\u0022: \u0022Suriname Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Surinamese dollar is the currency of Suriname. It is subdivided into 100 cents. The symbol of the Surinamese dollar (SRD) is $ or Sr$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SRD\u0022}, {\u0022code\u0022: \u0022SRG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022sr\u0022, \u0022name\u0022: \u0022Suriname Old Guilder\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022STD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Sao Tome/Principe Old Dobra\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/STD\u0022}, {\u0022code\u0022: \u0022STN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022st\u0022, \u0022name\u0022: \u0022Sao Tome/Principe Dobra\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Sao Tome and Principe dobra (STN) is the official currency of S\u005Cu00e3o Tom\u005Cu00e9 and Pr\u005Cu00edncipe. It is represented by the symbol Db. The Sao Tome and Principe dobra is pegged to the euro at the rate of 1 EUR \u003D 24.5 STN.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022SVC\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sv\u0022, \u0022name\u0022: \u0022El Salvador Colon\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Salvadoran colon (SVC) was the official currency of El Salvador until 2001. It was replaced by the US dollar with a fixed exchange rate of 1 USD \u003D 8.75 SVC. Although the Salvadoran colon remains a legal tender, it no longer circulates and is rarely used. On 7 Sept 2021, Bitcoin became legal tender in the country, along with the US dollar. El Salvador is the first country that has adopted Bitcoin globally.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SVC\u0022}, {\u0022code\u0022: \u0022SYP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sy\u0022, \u0022name\u0022: \u0022Syrian Pound\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Syrian pound (SYP) is the official currency of Syria. It is subdivided into 100 piastres, although these coins are no longer issued. The symbol of the Syrian pound is \u005Cu00a3S or LS.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SYP\u0022}, {\u0022code\u0022: \u0022SZL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022sz\u0022, \u0022name\u0022: \u0022Swaziland Lilangeni\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Swazi lilangeni (SZL) is the official currency of Eswatini. It is subdivided into 100 cents. The Swazi lilangeni is pegged to the South African rand.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/SZL\u0022}, {\u0022code\u0022: \u0022THB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022th\u0022, \u0022name\u0022: \u0022Thai Baht\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Thai baht (THB) is the official currency of the Kingdom of Thailand. The symbol of the currency is \u005Cu0e3f. It is divided into 100 satang. The Bank of Thailand issues the currency.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/thb/\u0022}, {\u0022code\u0022: \u0022TJS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tj\u0022, \u0022name\u0022: \u0022Tajikistan Somoni\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Tajikistani somoni (TJS) is the currency of Tajikistan. It is subdivided into 100 dirams. The symbol of the Tajikistani somoni is SM.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TJS\u0022}, {\u0022code\u0022: \u0022TMM\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022tm\u0022, \u0022name\u0022: \u0022Turkmenistan Old Manat\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022TMT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tm\u0022, \u0022name\u0022: \u0022Turkmenistan New Manat\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Turkmenistani manat (TMT) is the currency of Turkmenistan. It is subdivided into 100 tenges. The Turkmenistani manat is pegged to the US dollar at the rate of 1 USD \u003D 3.50 TMT.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TMT\u0022}, {\u0022code\u0022: \u0022TND\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tn\u0022, \u0022name\u0022: \u0022Tunisian Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Tunisian dinar (TND) is the official currency of Tunisia. It is subdivided into 1,000 millimes. The symbol of the Tunisian dinar is DT.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TND\u0022}, {\u0022code\u0022: \u0022TOP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022to\u0022, \u0022name\u0022: \u0022Tongan Pa\u0027anga\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Tongan pa\u0027anga (TOP) is the currency of Tonga and is governed by the National Reserve Bank of Tonga. The currency is not convertible and is pegged to the basket of currencies including the Australian dollar, New Zealand dollar, US dollar, and Japanese yen. The Tongan pa\u0027anga is subdivided into 100 senitis. The symbol of the pa\u0027anga is T$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TOP\u0022}, {\u0022code\u0022: \u0022TRL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Turkish Old Lira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022TRY\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tr\u0022, \u0022name\u0022: \u0022Turkish Lira\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Turkish lira (TRY) is the official currency of Turkey and Northern Cyprus. The Turkish lira was introduced in 1923. The symbol of TRY is \u005Cu20ba.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TRY\u0022}, {\u0022code\u0022: \u0022TTD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tt\u0022, \u0022name\u0022: \u0022Trinidad/Tobago Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Trinidad and Tobago dollar (TTD) is the official currency of Trinidad and Tobago. It is subdivided into 100 cents. The symbol of the Trinidad and Tobago dollar is $ or TT$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TTD\u0022}, {\u0022code\u0022: \u0022TWD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tw\u0022, \u0022name\u0022: \u0022Taiwan Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The New Taiwan dollar (TWD) is the official currency of Taiwan. It is subdivided into 10 jiao and 100 fen. The symbol of the New Taiwan dollar is NT$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TWD\u0022}, {\u0022code\u0022: \u0022TZS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022tz\u0022, \u0022name\u0022: \u0022Tanzanian Shilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Tanzanian shilling (TZS) is the official currency of Tanzania. It is subdivided into 100 senti. The symbol of the Tanzanian shilling is TSh.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/TZS\u0022}, {\u0022code\u0022: \u0022UAH\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ua\u0022, \u0022name\u0022: \u0022Ukraine Hryvnia\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Ukrainian hryvnia (UAH) is the currency of Ukraine. Its subunit is kopiyka, one\u002Dhundredth of the hryvnia. The symbol of the Ukrainian hryvnia is \u005Cu20b4.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/UAH\u0022}, {\u0022code\u0022: \u0022UGS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022ug\u0022, \u0022name\u0022: \u0022Uganda Old Shilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022UGX\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ug\u0022, \u0022name\u0022: \u0022Uganda Shilling\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/UGX\u0022}, {\u0022code\u0022: \u0022USD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022us\u0022, \u0022name\u0022: \u0022US Dollar\u0022, \u0022hypernym\u0022: \u0022usa, america, united states\u0022, \u0022bio\u0022: \u0022The US dollar (USD) is the official currency of the United States of America. It is the world\u005Cu2019s most widely traded currency.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/usd/\u0022}, {\u0022code\u0022: \u0022UYP\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022uy\u0022, \u0022name\u0022: \u0022Uruguayan Old Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022UYU\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022uy\u0022, \u0022name\u0022: \u0022Uruguayan Peso\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Uruguayan peso (UYU) is the official currency of Uruguay. It is subdivided into 100 cent\u005Cu00e9simos. The symbol of the Uruguayan peso is $ or $U.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/UYU\u0022}, {\u0022code\u0022: \u0022UZS\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022uz\u0022, \u0022name\u0022: \u0022Uzbekistan Som\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Uzbekistani som (UZS) is the currency of Uzbekistan. It is subdivided into 100 tiyin.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/UZS\u0022}, {\u0022code\u0022: \u0022VEB\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Venezuelan Bolivar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022VEF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ve\u0022, \u0022name\u0022: \u0022Venezuelan Bolivar Fuerte\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/VEF\u0022}, {\u0022code\u0022: \u0022VES\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ve\u0022, \u0022name\u0022: \u0022Venezuelan Bolivar Soberano\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Venezuelan bolivar soberano (VES) has been the official currency of Venezuela since 2018, replacing the bolivar fuerte (VEF). The bolivar digital (VED) was introduced on 1 Oct 2021 and is legal tender, along with the bolivar soberano. Both the US dollar and Colombian peso are used for the majority of transactions. As of 2021, VES is world\u0027s weakest currency.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022VND\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022vn\u0022, \u0022name\u0022: \u0022Vietnamese Dong\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Vietnamese dong (VND) is the currency of Vietnam. It was subdivided into 10 hao and 100 xu, with these coins being no longer in use due to high inflation. The currency\u005Cu2019s symbol is \u005Cu20ab. As of 2021, the Vietnamese dong is the world\u005Cu2019s third weakest currency.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/VND\u0022}, {\u0022code\u0022: \u0022VUV\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022vu\u0022, \u0022name\u0022: \u0022Vanuatu Vatu\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Vanuatu vatu (VUV) is the official currency of Vanuatu. The currency has no subunit. Its symbol is VT.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/VUV\u0022}, {\u0022code\u0022: \u0022WST\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ws\u0022, \u0022name\u0022: \u0022Samoan Tala\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Samoan tala (WST) is the currency of Samoa. It is subdivided into 100 sene. The symbol of the Samoan tala $ or WS$.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/WST\u0022}, {\u0022code\u0022: \u0022XAF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022cf\u0022, \u0022name\u0022: \u0022CFA Franc BEAC\u0022, \u0022hypernym\u0022: \u0022central african republic, cameroon, chad, congo, equatorial guinea, gabon\u0022, \u0022bio\u0022: \u0022Central African CFA franc BEAC (XAF) is the currency of 6 countries in central Africa: Cameroon, Central African Republic, Chad, Republic of the Congo, Equatorial Guinea and Gabon. It is pegged to the euro at the rate of 1 euro \u003D 655.957 XAF.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XAF\u0022}, {\u0022code\u0022: \u0022XAG\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xag\u0022, \u0022name\u0022: \u0022Silver (oz.)\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XAG\u0022}, {\u0022code\u0022: \u0022XAU\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xau\u0022, \u0022name\u0022: \u0022Gold (oz.)\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XAU\u0022}, {\u0022code\u0022: \u0022XBT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022btc\u0022, \u0022name\u0022: \u0022Bitcoin\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022XCD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xcd\u0022, \u0022name\u0022: \u0022East Caribbean Dollar\u0022, \u0022hypernym\u0022: \u0022antigua barbuda anguilla dominica grenada montserrat saint kitts nevis lucia vincent\u0022, \u0022bio\u0022: \u0022The Eastern Caribbean dollar (XCD) is the currency used by 8 members of the Organisation of Eastern Caribbean States: Antigua and Barbuda, Dominica, Grenada, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Anguilla, and Montserrat. The currency is subdivided into 100 cents. Its symbol is $ or EC$. The Eastern Caribbean dollar is pegged to the US dollar at the rate of 1 USD \u003D 2.70 XCD.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XCD\u0022}, {\u0022code\u0022: \u0022XEU\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022European Currency Unit\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022XOF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xof\u0022, \u0022name\u0022: \u0022West African CFA Franc\u0022, \u0022hypernym\u0022: \u0022benin burkina faso ivory coast mali niger senegal togo\u0022, \u0022bio\u0022: \u0022The West African CFA franc BCEAO (XOF) is the currency used by 8 independent states in West Africa: Benin, Burkina Faso, Guinea\u002DBissau, Ivory Coast, Mali, Niger, Senegal and Togo. It is pegged to the euro at the rate of 1 EUR \u003D 655.957 XOF.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XOF\u0022}, {\u0022code\u0022: \u0022XPD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xpd\u0022, \u0022name\u0022: \u0022Palladium (oz.)\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XPD\u0022}, {\u0022code\u0022: \u0022XPF\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022pf\u0022, \u0022name\u0022: \u0022Pacific Franc Exchange\u0022, \u0022hypernym\u0022: \u0022french polynesia, new caledonia, wallis and futuna\u0022, \u0022bio\u0022: \u0022The CFP franc (XPF) is the currency of the French overseas collectives: French Polynesia, Wallis and Futuna, and New Caledonia. It is subdivided into 100 centimes. The currency symbol is \u005Cu20a3 or F. The CFP franc is pegged to the euro at the rate of 1 EUR \u003D 119.3317 XPF.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XPF\u0022}, {\u0022code\u0022: \u0022XPT\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022xpt\u0022, \u0022name\u0022: \u0022Platinum (oz.)\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/XPT\u0022}, {\u0022code\u0022: \u0022YER\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022ye\u0022, \u0022name\u0022: \u0022Yemen Rial\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Yemeni rial (YER) is the currency of Yemen. It is subdivided into 100 fils, although these coins are no longer in use.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/YER\u0022}, {\u0022code\u0022: \u0022YUN\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022no\u002Dflag\u0022, \u0022name\u0022: \u0022Yugoslavian Old Dinar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022ZAR\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022za\u0022, \u0022name\u0022: \u0022South African Rand\u0022, \u0022hypernym\u0022: \u0022\u005Cud83c\u005Cuddff\u005Cud83c\u005Cudde6, Chantelle, Nicholas\u0022, \u0022bio\u0022: \u0022The South African rand (ZAR) is the currency of South Africa and is issued by the South African Reserve Bank. The South African rand has the symbol R. It is subdivided into 100 cents. The currency\u005Cu2019s name is derived from the word \u005Cu2018Witwatersrand\u005Cu2019, which means \u005Cu2018white waters\u005Cu2019 ridge\u005Cu2019. The ridge is where most of South Africa\u0027s gold deposits were found and where Johannesburg was built.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www.oanda.com/currency\u002Dconverter/en/currencies/majors/zar/\u0022}, {\u0022code\u0022: \u0022ZMK\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022zm\u0022, \u0022name\u0022: \u0022Zambian Kwacha\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ZMK\u0022}, {\u0022code\u0022: \u0022ZMW\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022zm\u0022, \u0022name\u0022: \u0022Zambian Kwacha\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Zambian kwacha (ZMW) is the currency of Zambia, issued by the Bank of Zambia. The kwacha is subdivided into 100 ngwees. The symbol of the Zambian kwacha is ZK.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}, {\u0022code\u0022: \u0022ZWD\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: true, \u0022flag\u0022: \u0022zw\u0022, \u0022name\u0022: \u0022Zimbabwe Old Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022The Zimbabwean dollar (ZWD) was the official currency of Zimbabwe from 1980 to 2009. During that time, the currency suffered three redenominations to fight high face value paper denominations caused by hyperinflation. Currencies such as the South African rand, Botswana pula, British pound, euro, US dollar, Australian dollar, Chinese yuan, Indian rupee and Japanese yen are now used as legal tender in the country.\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: \u0022https://www1.oanda.com/currency/iso\u002Dcurrency\u002Dcodes/ZWD\u0022}, {\u0022code\u0022: \u0022ZWL\u0022, \u0022active\u0022: true, \u0022obsolete\u0022: false, \u0022flag\u0022: \u0022zw\u0022, \u0022name\u0022: \u0022Zimbabwe Dollar\u0022, \u0022hypernym\u0022: \u0022\u0022, \u0022bio\u0022: \u0022\u0022, \u0022obsolete_message\u0022: \u0022\u0022, \u0022profile_url\u0022: null}]'
+            }
+        </script>
+<script src="/assets/js/mainCurrencyConverter.51d298e520a3.js" type="text/javascript"></script>
+</div>
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">OANDA's currency calculator tools use OANDA Rates™, the touchstone FX rates compiled from leading market data contributors.</p><script>(function(){var js = "window['__CF$cv$params']={r:'77ca5f917853411a',m:'GWJWrHXfXJqPRBq0YgDJ4veDf9nilMfSWNowCNBOkPY-1671560230-0-AfrI+ZtI0HLsQSs/IW1zl/zaCIVLiys4bI2U9es8jNpxsK3g03CxxQLNmKhVUZ1GVvHPlpVEpE8Oe/of57NGng3zjq7i30YFLaDro/Vjm3VGpiigY5uEO/azsX4ZRg1MbUaDruhmtPD2gXWFNphrdcI=',s:[0xf2604f1d99,0x798a09c72c],u:'/cdn-cgi/challenge-platform/h/g'};var _cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=77ca5f917853411a',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html></div>
+</div>
+</div>
+</div>
+<div class="content-card-lite content-cards__card card-time_series_chart">
+<div class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded">
+<div class="card-content">
+<div id="cc-time-series-plot">
+
+</div>
+<script src="/assets/js/timeSeriesPlot.0409210503b4.js" type="text/javascript"></script>
+</div>
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">These values represent the daily average of the Bid and Ask rates OANDA receives from many data sources.</p></body></html></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block content-cards-lite-row card-cheat_sheet_row background--white">
+<div class="block__container">
+<div class="row">
+<div class="col-no-padding cheat_sheet_links ">
+<div class="content-card-lite content-cards__card card-content_card">
+<div class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded">
+<div class="card-content cta-lite">
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/" class="btn btn-lite btn--link btn--text" rel="">
+<h4>
+FX data API
+</h4>
+</a>
+</div>
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">Our API can be integrated into your ERP, giving you access to accurate, historical FX data and rates.</p></body></html></div>
+</div>
+<div class="card-content cta-lite">
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/" class="btn btn-lite btn--link" rel="">
+More about our API
+</a>
+</div>
+</div>
+</div>
+<div class="content-card-lite content-cards__card card-content_card">
+<div class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded">
+<div class="card-content cta-lite cta-image">
+<a href="https://www.shiftconnect.com/oanda/" class="btn btn--link btn--clear btn--image" rel="nofollow,noreferer,noopener">
+<div class="card-content image align--left size--max">
+<picture>
+<source type="image/webp" srcset="/media/images/fx_payments-logo.width-1170.format-webp.webp">
+<img src="/media/images/fx_payments-logo.width-1170.png" alt="FX Payments Logo" width=208 height=28>
+</picture>
+</div>
+</a>
+</div>
+
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">A range of global money transfer benefits, together with cross-border expenses hedging, for businesses.</p></body></html></div>
+</div>
+<div class="card-content cta-lite">
+<a href="https://www.shiftconnect.com/oanda/" class="btn btn-lite btn--link" rel="nofollow,noreferer,noopener">
+Corporate FX payments
+</a>
+</div>
+</div>
+</div>
+<div class="content-card-lite content-cards__card card-content_card">
+<div class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded">
+<div class="card-content cta-lite cta-image">
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="btn btn--link btn--clear btn--image" rel="nofollow,noreferer,noopener">
+<div class="card-content image align--left size--max">
+<picture>
+<source type="image/webp" srcset="/media/images/wise-logo-1.width-1170.format-webp.webp">
+<img src="/media/images/wise-logo-1.width-1170.png" alt="TransferWise logo" width=78 height=28>
+</picture>
+</div>
+</a>
+</div>
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">We help individuals you send money abroad for less compared to traditional providers.</p></body></html></div>
+</div>
+<div class="card-content cta-lite">
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="btn btn-lite btn--link" rel="nofollow,noreferer,noopener">
+Transfer money
+</a>
+</div>
+</div>
+</div>
+<div class="content-card-lite content-cards__card card-content_card">
+<div class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded">
+<div class="card-content cta-lite">
+<a href="/foreign-exchange-data-services/en/historical-currency-converter/" class="btn btn-lite btn--link btn--text" rel="">
+<h4>
+Historical FX rates
+</h4>
+</a>
+</div>
+<div class="card-content text">
+<div class="rich-text"><html><head></head><body><p data-block-key="vmp02">Download our data into a CSV file or access it via our cloud-based converter.</p></body></html></div>
+</div>
+<div class="card-content cta-lite">
+<a href="/foreign-exchange-data-services/en/historical-currency-converter/" class="btn btn-lite btn--link" rel="">
+See our converter
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block content-cards-lite-row card-content_card_lite_row background--white">
+<div class="block__container">
+<div class="content-cards content-cards--equal-height">
+<div class="content-card-lite content-cards__card card-live_rates_block_small">
+<div class="content-cards__card__inner background--transparent border--  ">
+<div class="cc_live_rates_block__main-title-small">
+Live Rates
+</div>
+<div id="cc-live-rates-block-small">
+</div>
+<script>
+        window.liveRatesConfig = {
+            currencyGroups: "[{\u0022group\u0022: \u0022Name\u0022, \u0022instruments\u0022: [{\u0022instrument\u0022: \u0022EUR_USD\u0022, \u0022link\u0022: \u0022\u0022}, {\u0022instrument\u0022: \u0022USD_JPY\u0022, \u0022link\u0022: \u0022\u0022}, {\u0022instrument\u0022: \u0022XAU_USD\u0022, \u0022link\u0022: \u0022\u0022}, {\u0022instrument\u0022: \u0022BTC_USD\u0022, \u0022link\u0022: \u0022\u0022}]}]",
+            isFullPage: false,
+            liveRatesApiUrl: "https://labs-api.oanda.com/v2/rates",
+            liveRatesDivision: "MKTD",
+            locale: "en",
+            
+                liveRatesFullPageLink: "https://www.oanda.com/currency-converter/live-exchange-rates/"
+            
+        }
+    </script>
+<script src="/assets/js/liveRates.84b2e6ed06d6.js" type="text/javascript"></script>
+</div>
+</div>
+<div class="popular_conversions-col">
+<div class="content-card-lite content-cards__card popular_conversions-wrapper">
+<div class="content-cards__card__inner">
+<div class="row-no-margin pop_title">Popular conversions</div>
+<div class="row" data-popular-currencies="USD,CHF,JPY,CNY,EUR,GBP,HKD,AUD,NZD,CAD,SEK">
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="USD">
+<a href="?from=EUR&to=USD&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to USD
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="CHF">
+<a href="?from=EUR&to=CHF&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to CHF
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="JPY">
+<a href="?from=EUR&to=JPY&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to JPY
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="CNY">
+<a href="?from=EUR&to=CNY&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to CNY
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="GBP">
+<a href="?from=EUR&to=GBP&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to GBP
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="HKD">
+<a href="?from=EUR&to=HKD&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to HKD
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="AUD">
+<a href="?from=EUR&to=AUD&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to AUD
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="NZD">
+<a href="?from=EUR&to=NZD&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to NZD
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="CAD">
+<a href="?from=EUR&to=CAD&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to CAD
+</span>
+</a>
+</div>
+<div class="content-card-lite content-cards__card card-popular_conversions popular_conversion" data-base-currency="EUR" data-quote-currency="SEK">
+<a href="?from=EUR&to=SEK&amount=1" class="content-cards__card__inner background--transparent border--dove-5  content-cards__card--rounded popular_conversion-link">
+<span class="popular_conversion-link-text">
+1 EUR to SEK
+</span>
+ </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ad-block align--center ">
+<script>
+            let gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24_mapping;
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+                gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24_mapping = googletag.sizeMapping()
+                    
+                    
+                        .addSize([1024, 200], [[160, 600], [300, 250]])
+                    
+                        .addSize([768, 200], [[160, 600], [300, 250]])
+                    
+                        .addSize([375, 200], [[300, 250]])
+                    
+                        .addSize([0, 0], [])
+                    
+                    .build();
+            googletag
+                .defineSlot(
+                    '/22424087480/oanda/currency_converter', [300, 250], 'gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24')
+                .defineSizeMapping( gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24_mapping )
+                .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+<style>
+            @media screen and (min-width: 1024px) {
+                #gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24.ad-block__inner {
+                    min-height: 250px;
+                    min-width: 300px;
+                }
+            }
+        </style>
+<div class="ad-block__inner" id="gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24">
+<script>
+                googletag.cmd.push(function() {
+                    googletag.display('gpt_ad_391_6fccdcac_36b1_49ef_9d0e_8217715aaf24');
+                });
+            </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block collection_block content_library_currency_collection">
+<div class="block__container">
+<div class="block__container-header">
+<div class="collection_block__header">
+<h2 class="collection_block__header__title">Find other currencies</h2>
+<div class="collection_block__header__desc"></div>
+</div>
+</div>
+<div class="row small__collection">
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/aed/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-ae"></span>
+<span class="preview-title-code">AED</span>
+<span class="preview-title-name">Utd. Arab Emir. Dirham</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/aud/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-au"></span>
+<span class="preview-title-code">AUD</span>
+<span class="preview-title-name">Australian Dollar</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/brl/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-br"></span>
+<span class="preview-title-code">BRL</span>
+<span class="preview-title-name">Brazilian Real</span>
+</a>
+ </div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/chf/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-ch"></span>
+<span class="preview-title-code">CHF</span>
+<span class="preview-title-name">Swiss Franc</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/cny/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-cn"></span>
+<span class="preview-title-code">CNY</span>
+<span class="preview-title-name">Chinese Yuan Renminbi</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/eur/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-eu"></span>
+<span class="preview-title-code">EUR</span>
+<span class="preview-title-name">Euro</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/gbp/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-gb"></span>
+<span class="preview-title-code">GBP</span>
+<span class="preview-title-name">Great British Pound</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/hkd/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-hk"></span>
+<span class="preview-title-code">HKD</span>
+<span class="preview-title-name">Hong Kong Dollar</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/inr/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-in"></span>
+<span class="preview-title-code">INR</span>
+<span class="preview-title-name">Indian Rupee</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/jpy/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-jp"></span>
+<span class="preview-title-code">JPY</span>
+<span class="preview-title-name">Japanese Yen</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/mxn/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-mx"></span>
+<span class="preview-title-code">MXN</span>
+<span class="preview-title-name">Mexican Peso</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/myr/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-my"></span>
+<span class="preview-title-code">MYR</span>
+<span class="preview-title-name">Malaysian Ringgit</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/php/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-ph"></span>
+<span class="preview-title-code">PHP</span>
+<span class="preview-title-name">Philippine Peso</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/sar/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-sa"></span>
+<span class="preview-title-code">SAR</span>
+<span class="preview-title-name">Saudi Riyal</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/sek/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-se"></span>
+<span class="preview-title-code">SEK</span>
+<span class="preview-title-name">Swedish Krona</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/sgd/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-sg"></span>
+<span class="preview-title-code">SGD</span>
+<span class="preview-title-name">Singapore Dollar</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/thb/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-th"></span>
+<span class="preview-title-code">THB</span>
+<span class="preview-title-name">Thai Baht</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/usd/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-us"></span>
+<span class="preview-title-code">USD</span>
+<span class="preview-title-name">US Dollar</span>
+</a>
+</div>
+<div class="small__collection__post currency__collection__post">
+<a href="https://www.oanda.com/currency-converter/en/currencies/majors/zar/" class="small__collection__post--title currency__collection__post--title">
+<span class="region__country-flag flag-icon flag-icon-za"></span>
+<span class="preview-title-code">ZAR</span>
+<span class="preview-title-name">South African Rand</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="content_cards-row
+            block
+            background--full-width
+            background--transparent
+            
+            
+            ">
+<div class="block__container">
+<div class="content-cards
+                     content-cards--equal-height
+                    
+                    
+                    ">
+<div class="content-cards__card content-cards__card--single-padding reading-width">
+<div class="content-cards__card__inner background--transparent content-cards__card--align-left    background--text">
+<div class="media  media--no-padding">
+</div>
+<div class="content-cards__card__content" style="border-color: transparent">
+<div class="content-cards__card__content-block content-cards__card__content-block--title">
+<h3>What is OANDA’s Currency Converter?</h3>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--text">
+<div class="rich-text"><html><head></head><body><p data-block-key="4mdlz">OANDA’s Currency Converter allows you to check the latest foreign exchange average bid/ask rates and convert all major world currencies. OANDA Rates™ are foreign exchange rates compiled from leading market data contributors.</p></body></html></div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--title">
+<h3>How to use OANDA’s Currency Converter</h3>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--text">
+<div class="rich-text"><html><head></head><body><p data-block-key="4mdlz">To use OANDA’s free currency converter, type into the relevant field currency names, 3-letter ISO currency symbols, or country names to select your currency. You can convert world currencies, precious metals, or obsolete currencies. You can also access currency exchange rates dating back to January 1990.</p></body></html></div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--title">
+<h3>Why use OANDA’s Currency Converter?</h3>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--icon">
+<div class="icon icon--left">
+<picture>
+<source type="image/webp" srcset="/media/images/icon-12x_wzJSLw3.max-120x120.format-webp.webp">
+<img src="/media/images/icon-12x_wzJSLw3.max-120x120.png" alt="Credible and accurate icon" width=60 height=60>
+</picture>
+</div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--subtitle">
+<h4>Credible and accurate</h4>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--text">
+<div class="rich-text"><html><head></head><body><p data-block-key="4mdlz">We have direct access to real-time FX rates, so you can be assured that the data we provide is always accurate and reliable.</p></body></html></div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--icon">
+<div class="icon icon--left">
+<picture>
+<source type="image/webp" srcset="/media/images/icon-22x_Qg8VmOP.max-120x120.format-webp.webp">
+<img src="/media/images/icon-22x_Qg8VmOP.max-120x120.png" alt="Trusted provider icon" width=60 height=60>
+</picture>
+</div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--subtitle">
+<h4>Trusted provider</h4>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--text">
+<div class="rich-text"><html><head></head><body><p data-block-key="4mdlz">Our rates are trusted and used by major corporations, tax authorities, auditing firms and individuals around the world.</p></body></html></div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--icon">
+<div class="icon icon--left">
+<picture>
+<source type="image/webp" srcset="/media/images/icon-32x_f2hcpyY.max-120x120.format-webp.webp">
+<img src="/media/images/icon-32x_f2hcpyY.max-120x120.png" alt="Years of FX Data icon" width=60 height=60>
+</picture>
+</div>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--subtitle">
+<h4>Years of FX Data</h4>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--text">
+<div class="rich-text"><html><head></head><body><p data-block-key="4mdlz">We have over 31 years of historical data for over 38,000 forex pairs and rates from over 200 currencies, commodities, and precious metals.</p></body></html></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block content-cards-lite-row card-content_card_lite_row background--white">
+<div class="block__container">
+<div class="content-cards content-cards--equal-height">
+<div class="ad-block align--center col">
+<script>
+            let gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619_mapping;
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+                gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619_mapping = googletag.sizeMapping()
+                    
+                    
+                        .addSize([1024, 200], [[970, 90], [728, 90]])
+                    
+                        .addSize([768, 200], [[970, 90]])
+                    
+                        .addSize([375, 200], [[320, 50]])
+                    
+                        .addSize([0, 0], [])
+                    
+                    .build();
+            googletag
+                .defineSlot(
+                    '/22424087480/oanda/currency_converter', [320, 50], 'gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619')
+                .defineSizeMapping( gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619_mapping )
+                .addService(googletag.pubads());
+            googletag.enableServices();
+          });
+        </script>
+<style>
+            @media screen and (min-width: 1024px) {
+                #gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619.ad-block__inner {
+                    min-height: 90px;
+                    min-width: 728px;
+                }
+            }
+        </style>
+<div class="ad-block__inner" id="gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619">
+<script>
+                googletag.cmd.push(function() {
+                    googletag.display('gpt_ad_391_b134d048_2c3f_450c_b266_68732455f619');
+                });
+            </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content_cards-row
+            block
+            background--full-width
+            background--transparent
+            
+            
+            ">
+<div class="block__container">
+<div class="content-cards
+                     content-cards--equal-height
+                    
+                    
+                    ">
+<div class="content-cards__card content-cards__card--single-padding reading-width">
+<div class="content-cards__card__inner background--dove-1 content-cards__card--align-center  content-cards__card--rounded  background--text">
+<div class="media  media--no-padding">
+</div>
+<div class="content-cards__card__content" style="border-color: transparent">
+<div class="content-cards__card__content-block content-cards__card__content-block--overline">
+<span class="overline">Convert on the go</span>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--title">
+<h3>Download the OANDA Currency Converter app</h3>
+</div>
+<div class="content-cards__card__content-block content-cards__card__content-block--app_store_images">
+<div class="content-cards__card__app-icons app-store-nav">
+<a href="https://apps.apple.com/app/currency-converter/id326884235" target="_blank" rel="nofollow,noreferer,noopener">
+<picture>
+<source type="image/webp" srcset="/media/images/Apple_Store.height-80.format-webp.webp">
+<img src="/media/images/Apple_Store.height-80.png" alt="Apple Store Icon" width=270 height=80>
+</picture>
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.oanda.currencyconverter" target="_blank" rel="nofollow,noreferer,noopener">
+<picture>
+<source type="image/webp" srcset="/media/images/Google_Play.height-80.format-webp.webp">
+<img src="/media/images/Google_Play.height-80.png" alt="Google Play Icon" width=270 height=80>
+</picture>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block block--faq js-faq">
+<div class="block__container block--faq__container">
+<h2>Frequently asked questions</h2>
+<div class="block--faq__category">
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>How can I convert my money?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="tx4ke">We have partnered with Shift to offer you a money conversion service. Our global money transfers are tailored to meet your FX payments needs.</p></body></html></div>
+</div>
+</div>
+</div>
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>Which currencies can I convert with the Currency Converter?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="x4atm">We have 212 currencies which are being used in the new currency converter. Visit this page to view the complete list.</p></body></html></div>
+</div>
+</div>
+</div>
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>What other languages are available for the Currency Converter?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="x4atm">We are currently supporting 9 languages: English, French, German, Spanish, Italian, Portuguese, Russian, Chinese, Japanese.</p></body></html></div>
+</div>
+</div>
+</div>
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>What is the interbank rate and should I use it?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="x4atm">Also known as the mid-market rate, the spot rate or the real exchange rate, the interbank rate is the exchange rate used by banks and large institutions when trading large volumes of foreign currency with one another. It is not made for individuals and smaller businesses, as smaller money transfers tend to attract a higher mark-up, so that the exchange offering the service can make a profit.</p></body></html></div>
+</div>
+</div>
+</div>
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>Why do currency conversion rates differ between companies?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="x4atm">Currency conversion rates differ between companies as each company manipulates the interbank rate to make a profit. This is usually done on volume; the higher the volume, the closer you get to the interbank rate. We come across a lot of competitors that post interbank rates online as a bait to hook new customers, but, once customers are onboard, they change the rate drastically, not usually in the customers’ favour.</p></body></html></div>
+</div>
+</div>
+</div>
+<div class="block--faq__question js-question">
+<div class="block--faq__question-toggle js-question-toggle">
+<i class="material-icons">add</i>
+<h4>What is the best time to exchange my money or to buy or sell currencies?</h4>
+</div>
+<div class="block--faq__question-body js-question-body">
+<div class="block--faq__question-content js-question-content">
+<div class="rich-text"><html><head></head><body><p data-block-key="x4atm">Most trading happens in the UK and US market, so 8am GMT to 5pm EST, is when the market is most liquid and the difference between the bid and ask rates is minimal. Once you operate outside these hours, you can’t cover your deal with large institutions and have to pay the rate as an insurance against fluctuations from the time you book to offsetting with a partner.</p></body></html></div>
+</div>
+</div>
+</div>
+</div>
+<script type="application/ld+json" defer>
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I convert my money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>We have partnered with Shift to offer you a money conversion service. Our global money transfers are tailored to meet your FX payments needs.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "Which currencies can I convert with the Currency Converter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>We have 212 currencies which are being used in the new currency converter. Visit this page to view the complete list.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What other languages are available for the Currency Converter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>We are currently supporting 9 languages: English, French, German, Spanish, Italian, Portuguese, Russian, Chinese, Japanese.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the interbank rate and should I use it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>Also known as the mid-market rate, the spot rate or the real exchange rate, the interbank rate is the exchange rate used by banks and large institutions when trading large volumes of foreign currency with one another. It is not made for individuals and smaller businesses, as smaller money transfers tend to attract a higher mark-up, so that the exchange offering the service can make a profit.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why do currency conversion rates differ between companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>Currency conversion rates differ between companies as each company manipulates the interbank rate to make a profit. This is usually done on volume; the higher the volume, the closer you get to the interbank rate. We come across a lot of competitors that post interbank rates online as a bait to hook new customers, but, once customers are onboard, they change the rate drastically, not usually in the customers’ favour.</p>"
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the best time to exchange my money or to buy or sell currencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<p>Most trading happens in the UK and US market, so 8am GMT to 5pm EST, is when the market is most liquid and the difference between the bid and ask rates is minimal. Once you operate outside these hours, you can’t cover your deal with large institutions and have to pay the rate as an insurance against fluctuations from the time you book to offsetting with a partner.</p>"
+        }
+      }]
+    }
+</script>
+</div>
+</div>
+</main>
+<a href="#top" id="scroll-to-top" class="hidden"><i class="material-icons" aria-hidden="true">arrow_upward</i></a>
+<footer>
+<div class="footer__main">
+<div class="contact-strip">
+<div class="container">
+<div class="row">
+<div class="logo ">
+<img alt="OANDA_FXDS_Logo_Light__nopadding_v0.01" height="30" src="/media/images/OANDA_FXDS_Logo_Light__nopadding_v0.01.height-50.png" width="">
+</div>
+</div>
+</div>
+</div>
+<div class="local-nav">
+<div class="container">
+<div class="local-nav__container">
+<div class="row">
+<div class="local-nav__menu">
+<div class="local-nav__menu-container">
+<div class="local-nav__menu_name">Exchange rates API <i class="material-icons">add</i></div>
+<ul class="local-nav__menu_links">
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/" class="local-nav__menu_link" rel="">
+Exchange rates API
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/free-trial/" class="local-nav__menu_link" rel="">
+Free trial
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/api-pricing/" class="local-nav__menu_link" rel="">
+Pricing
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/api-developers/" class="local-nav__menu_link" rel="">
+Developers
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/api-accuracy/" class="local-nav__menu_link" rel="">
+Accuracy
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/api-integration-matrix/" class="local-nav__menu_link" rel="">
+Integration matrix
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="local-nav__menu">
+<div class="local-nav__menu-container">
+<div class="local-nav__menu_name">Currency Converters <i class="material-icons">add</i></div>
+<ul class="local-nav__menu_links">
+<li>
+<a href="/foreign-exchange-data-services/en/historical-currency-converter/" class="local-nav__menu_link" rel="">
+Historical currency converter
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="local-nav__menu">
+<div class="local-nav__menu-container">
+<div class="local-nav__menu_name">FX Payments <i class="material-icons">add</i></div>
+<ul class="local-nav__menu_links">
+<li>
+<a href="https://www.shiftconnect.com/oanda/" class="local-nav__menu_link" rel="nofollow,noreferer,noopener">
+Corporate
+</a>
+</li>
+<li>
+<a href="https://transferwise.prf.hn/l/62Dzdmj" class="local-nav__menu_link" rel="">
+Individual
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="local-nav__menu">
+<div class="local-nav__menu-container">
+<div class="local-nav__menu_name">Resources <i class="material-icons">add</i></div>
+<ul class="local-nav__menu_links">
+<li>
+<a href="/foreign-exchange-data-services/en/exchange-rates-api/api-resources/" class="local-nav__menu_link" rel="">
+API resources
+</a>
+</li>
+<li>
+<a href="https://blog.oanda.com/" class="local-nav__menu_link" rel="">
+Blog
+</a>
+</li>
+<li>
+<a href="/foreign-exchange-data-services/en/faq-help-portal/" class="local-nav__menu_link" rel="">
+Frequently asked questions
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="local-nav__menu">
+<div class="local-nav__menu-container">
+<div class="local-nav__menu_name">OANDA Group <i class="material-icons">add</i></div>
+<ul class="local-nav__menu_links">
+<li>
+<a href="/group/about-us/" class="local-nav__menu_link" rel="">
+About us
+</a>
+</li>
+<li>
+<a href="/group/media-center/" class="local-nav__menu_link" rel="">
+Press
+</a>
+</li>
+<li>
+<a href="/group/news-analysis/" class="local-nav__menu_link" rel="">
+News &amp; analysis
+</a>
+</li>
+<li>
+<a href="/group/culture/" class="local-nav__menu_link" rel="">
+Careers
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="local-nav--secondary">
+<div class="container">
+<div class="local-nav--secondary__container">
+<div class="row icons-nav">
+<div class="icon-nav__app-store">
+
+<a href="https://apps.apple.com/app/currency-converter/id326884235" target="_blank" rel="nofollow,noreferer,noopener">
+<picture>
+<source type="image/webp" srcset="/media/images/Apple_Store.height-80.format-webp.webp">
+<img src="/media/images/Apple_Store.height-80.png" alt="Apple Store Icon" width=270 height=80>
+</picture>
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.oanda.currencyconverter" target="_blank" rel="nofollow,noreferer,noopener">
+<picture>
+<source type="image/webp" srcset="/media/images/Google_Play.height-80.format-webp.webp">
+<img src="/media/images/Google_Play.height-80.png" alt="Google Play Icon" width=270 height=80>
+</picture>
+</a>
+</div>
+</div>
+<div class="row logos">
+<div class="logo ">
+<img alt="OANDA_FXDS_Logo_Light__nopadding_v0.01" height="30" src="/media/images/OANDA_FXDS_Logo_Light__nopadding_v0.01.height-50.png" width="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__secondary">
+<div class="global-nav">
+<div class="container">
+<div class="global-nav__container">
+<div class="row">
+<div class="global-nav__social">
+<a href="https://www.facebook.com/FXDataServices" target="_blank" rel="nofollow,noreferer,noopener" class="rm-icon">
+<img src="/assets/images/social-icons/light/facebook.db666e91dd10.svg" alt="Facebook" width="20" height="20">
+</a>
+<a href="https://twitter.com/FXDataServices" target="_blank" rel="nofollow,noreferer,noopener" class="rm-icon">
+<img src="/assets/images/social-icons/light/twitter.c6501060b306.svg" alt="Twitter" width="20" height="20">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="disclaimer">
+<div class="container">
+<div class="disclaimer__container">
+<div class="row">
+<div class="disclaimer__text">
+<div class="rich-text"><html><head></head><body><p data-block-key="erweo">© <span data-dynamic_tag="CURRENT_YEAR">2022</span> OANDA Business Information &amp; Services Inc.</p></body></html></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="cookie-bar" class="bar bar--cookie bar--smaller js-cookie bar--background-black cookie-bar--bottom" data-alert-id="accept-cookie">
+<div class="bar__container">
+<div class="bar__row">
+<div class="bar__contents">
+ <div class="rich-text"><html><head></head><body><p data-block-key="ocr4d">We use a range of cookies to give you the best browsing experience. By continuing to use this website, you agree to our use of cookies.</p></body></html></div>
+<a href="#" class="js-close btn btn--primary btn--green btn--rectangle bar__close--desktop">
+OK
+</a>
+<i class="bar__close material-icons js-close bar__close--mobile">close</i>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+--2022-12-20 19:17:10--  https://www.oanda.com/currency-converter/en/?from=CZK
+Resolving www.oanda.com (www.oanda.com)... 104.17.30.191, 104.17.29.191
+Connecting to www.oanda.com (www.oanda.com)|104.17.30.191|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /currency-converter/en/ [following]
+--2022-12-20 19:17:10--  https://www.oanda.com/currency-converter/en/
+Reusing existing connection to www.oanda.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html?from=CZK’
+
+index.html?fro            0  --.-KB/s                   index.html?fro      178.86K  --.-KB/s    in 0.02s       
+
+2022-12-20 19:17:10 (8.92 MB/s) - ‘index.html?from=CZK’ saved [183148]
+
